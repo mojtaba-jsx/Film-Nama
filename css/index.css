@@ -2,7 +2,7 @@
 @import '/css/reset.css';
 @import '/css/fonts.css';
 
-/*! Color Variables */
+/*! Color Variables And Container */
 
 :root{
     --woodSmoke:#0D0C11;
@@ -10,3 +10,17 @@
     --white:#ffffff;
     --rangoonGreen:#17161B;
 }
+
+.conainer{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+                                /*! ////////////////////////// */
+                                        /* ^Styels */
+                                /*! //////////////////////// */
+
+/*& ////////////////////// */
+    /* & Header Section */
+/*& ////////////////////// */
+
