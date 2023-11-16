@@ -11,8 +11,8 @@
     --rangoonGreen:#17161B;
 }
 
-.conainer{
-    width: 1400px;
+.container{
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -23,4 +23,84 @@
 /*& ////////////////////// */
     /* & Header Section */
 /*& ////////////////////// */
+.header{
+    background-color: var(--woodSmoke);
+}
+/** ////Navbar Section Styles //// */
 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.navbar__logo{
+    color: var(--cadmiumRed);
+    font-size: 2rem;
+    font-family: 'inter-bold', Courier, monospace;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list-item{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.navbar__list-link{
+    color: var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.navbar__list-item:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list-polygon{
+    margin-right: 0.4rem;
+}
+
+.navbar__list-item:nth-child(4){
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list-link-arrow{
+    margin-left: 0.4rem;
+}
+
+.navbar__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navabr__search-icon,
+.navbar__bell-icon,
+.navbar__lang-icon{
+    margin-right: 1.8rem;
+}
+
+.navbar__lang-icon{
+    color: var(--white);
+    font-family: 'inter-medium', Courier, monospace;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__lang-icon-svg{
+    margin-right: 1rem;
+}
+
+.navbar__lang-icon-arrow{
+    margin-left: 0.4rem;
+}
