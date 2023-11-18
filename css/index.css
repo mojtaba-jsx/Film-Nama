@@ -108,13 +108,16 @@
 .navabr__search-icon-svg{
     cursor: pointer;
 }
+.navbar__bell-icon{
+    cursor: pointer;
+}
 
 
 /** ////Modal Search Styles //// */
 
 .search-modal{
     max-width: 40rem;
-    height: 18rem;
+    height: 14rem;
     border-radius: 1rem;
     background-color: var(--rangoonGreen);
     margin: 0 auto;
@@ -144,8 +147,7 @@
 
 .search-modal__title{
     text-align: center;
-    padding-top: 1rem;
-    font-size: 2.8rem;
+    font-size: 1rem;
     color: var(--white);
     font-family: 'poppins-bold', Courier, monospace;
 }
@@ -154,7 +156,7 @@
     margin: 0 auto;
     display: block;
     margin-top: 2rem;
-    width: 28rem;
+    width: 18rem;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     border: none;
@@ -178,7 +180,7 @@
     margin: 0 auto;
     display: block;
     margin-top: 1rem;
-    padding: 0.8rem 5rem;
+    padding: 0.4rem 2rem;
     border-radius: 1rem;
     background-color: var(--cadmiumRed);
     color: var(--woodSmoke);
@@ -189,12 +191,41 @@
 
 .search-modal__close{
     fill: var(--white);
-    font-size: 2.8rem;
+    font-size: 2rem;
     display: block;
     margin-top: -1rem;
+    margin-left: 0.2rem;
     cursor: pointer;
     transition: all 200ms ease-in;
 }
 .search-modal__close:hover{
     fill: var(--cadmiumRed);
+}
+
+/** ////Notification Modal Styles //// */
+.notif-box{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    display: none;
+}
+.notif-modal{
+    width: 20rem;
+    height: 6rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    line-height: 5rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    background-color: var(--rangoonGreen);
+    color: var(--cadmiumRed);
+}
+
+.notif-modal__close{
+    fill: var(--cadmiumRed);
+    display: block;
+    margin-left: 0.2rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
 }
