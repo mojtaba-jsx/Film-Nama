@@ -113,18 +113,20 @@
 /** ////Modal Search Styles //// */
 
 .search-modal{
-    max-width: 60rem;
+    max-width: 40rem;
     height: 18rem;
     border-radius: 1rem;
     background-color: var(--rangoonGreen);
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     z-index: 100;
     display: none;
     transition: all 400ms ease-in;
     animation-name: showModal;
     animation-duration: 800ms;
 }
+
 
 @keyframes showModal{
     from {
@@ -175,11 +177,24 @@
 .search-modal__btn{
     margin: 0 auto;
     display: block;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0.8rem 5rem;
     border-radius: 1rem;
     background-color: var(--cadmiumRed);
     color: var(--woodSmoke);
     font-family: 'poppins-bold', Courier, monospace;
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-modal__close{
+    fill: var(--white);
+    font-size: 2.8rem;
+    display: block;
+    margin-top: -1rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.search-modal__close:hover{
+    fill: var(--cadmiumRed);
 }
