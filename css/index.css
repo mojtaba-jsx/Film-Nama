@@ -143,6 +143,12 @@
     font-family: 'inter-medium', Courier, monospace;
 }
 
+.res-menu-icon{
+    color: var(--cadmiumRed);
+    font-size: 2rem;
+    display: none;
+}
+
 /** ////Modal Search Styles //// */
 
 .search-modal{
