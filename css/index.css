@@ -143,11 +143,39 @@
     font-family: 'inter-medium', Courier, monospace;
 }
 
-.res-menu-icon{
+/** ////Mobile Menu Styles //// */
+.mobile-menu__icon{
     color: var(--cadmiumRed);
     font-size: 2rem;
     display: none;
 }
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** ////Modal Search Styles //// */
 
