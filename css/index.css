@@ -88,6 +88,7 @@
 .navbar__bell-icon,
 .navbar__lang-icon{
     margin-right: 1.8rem;
+    cursor: pointer;
 }
 
 .navbar__lang-icon{
@@ -112,6 +113,35 @@
     cursor: pointer;
 }
 
+.navbar__lang-icon{
+    position: relative;
+}
+
+.navbar__lang-icon-arrow{
+    transform: rotate(180deg);
+    transition: all 200ms ease-in;
+}
+
+.language__list{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--woodSmoke);
+    position: absolute;
+    right: 6rem;
+    top: 3.2rem;
+    border-radius: 1rem;
+    display: none;
+}
+
+.language__list-item{
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--white);
+    font-family: 'inter-medium', Courier, monospace;
+}
 
 /** ////Modal Search Styles //// */
 
