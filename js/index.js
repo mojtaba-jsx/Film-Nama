@@ -10,10 +10,32 @@ const notifBox = document.querySelector('.notif-box');
 const navbarBellIcon = document.querySelector('.navbar__bell-icon-svg');
 
 //& //
-const languageIcon = document.querySelector('.navbar__lang-icon')
-const languageIconSvg = document.querySelector('.navbar__lang-icon-svg')
+const languageIcon = document.querySelector('.navbar__lang-icon');
+const languageIconSvg = document.querySelector('.navbar__lang-icon-svg');
 const languageList = document.querySelector('.language__list');
-const languageArrowIcon = document.querySelector('.navbar__lang-icon-arrow')
+const languageArrowIcon = document.querySelector('.navbar__lang-icon-arrow');
+
+//& //
+const mobileMenuIcon = document.querySelector('.mobile-menu__icon');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+//& //
+const mobileMenuSearchIcon =document.querySelector('.mobile-menu__search-icon');
+const mobileMenuSearchbox = document.querySelector('.mobile-menu__searchbox');
+const mobileMenuSearchboxBtn = document.querySelector('.mobile-menu__searchbox-btn');
+
+//& //
+const mobileMenuBellIcon = document.querySelector('.mobile-menu__bell-icon');
+const mobileMenuNotifModal = document.querySelector('.mobile-menu__notif-modal');
+
+//& //
+const mobileMenuLangIcon = document.querySelector('.mobile-menu__lang-icon');
+const mobileMenuLangList = document.querySelector('.mobile-menu__lang-list')
+const mobileMenuLangIconSvg = document.querySelector('.mobile-menu__lang-icon-svg');
+
+
+
+
 
 //! Search Modal Logic For Show And Hide Modal
 searchIcon.addEventListener('click',()=>{
@@ -58,6 +80,63 @@ languageIcon.addEventListener('click',()=>{
         languageList.style.display='none';
         languageIconSvg.style.fill='white';
         languageArrowIcon.style.transform='rotate(180deg)'
+        flag=false;
+    }
+})
+
+//!  Logic For Show And Hide Mobile Menu
+
+mobileMenuIcon.addEventListener('click',()=>{
+    console.log('hello');
+    if(!flag){
+        mobileMenu.style.display='block';
+        mobileMenuIcon.style.transform='rotate(90deg)'
+        flag=true;
+    }else{
+        mobileMenu.style.display='none';
+        mobileMenuIcon.style.transform='rotate(0deg)'
+        flag=false;
+    }
+})
+
+//!  Logic For Show And Hide Mobile Menu SearchBox
+
+mobileMenuSearchIcon.addEventListener('click',()=>{
+    if(!flag){
+        mobileMenuSearchboxBtn.style.display='block';
+        mobileMenuSearchbox.style.display='block';
+        flag=true;
+    }else{
+        mobileMenuSearchboxBtn.style.display='none';
+        mobileMenuSearchbox.style.display='none';
+        flag=false;
+    }
+
+})
+
+//!  Logic For Show And Hide Mobile Menu NotifBox
+
+mobileMenuBellIcon.addEventListener('click',()=>{
+    if(!flag){
+        mobileMenuNotifModal.style.display='block';
+        flag=true
+    }else{
+        mobileMenuNotifModal.style.display='none';
+        flag=false;
+    }
+
+})
+
+//!  Logic For Show And Hide Mobile Menu LanguageBox
+
+mobileMenuLangIcon.addEventListener('click',()=>{
+
+    if(!flag){
+        mobileMenuLangList.style.display='flex';
+        mobileMenuLangIconSvg.style.transform='rotate(180deg)'
+        flag=true;
+    }else{
+        mobileMenuLangList.style.display='none';
         flag=false;
     }
 })
