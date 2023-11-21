@@ -140,3 +140,9 @@ mobileMenuLangIcon.addEventListener('click',()=>{
         flag=false;
     }
 })
+
+//!  Swiper Js
+
+
+
+

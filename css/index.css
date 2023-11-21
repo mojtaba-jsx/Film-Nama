@@ -231,6 +231,58 @@
     cursor: pointer;
 }
 
+.mobile-menu__icon {
+    display: none;
+    margin-right: 2rem;
+  }
+
+  .navbar__logo {
+    margin-left: 2rem;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 18rem;
+    height: 100vh;
+    z-index: 10;
+    display: none;
+  }
+  .mobile-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .mobile-menu__list-item {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .mobile-menu__list-link {
+    color: var(--white);
+    font-family: "poppins-medium", Courier, monospace;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .mobile-menu__icons {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .mobile-menu__language__list {
+    display: none;
+  }
+
+  .mobile-menu__icon{
+    cursor: pointer;
+  }
+
 
 
 
