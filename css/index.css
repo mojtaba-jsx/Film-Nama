@@ -422,7 +422,12 @@
 }
 
 /** ////Swiper Js Slider Styles //// */
-
+.swiper-button-next::after{
+    color: var(--cadmiumRed);
+}
+.swiper-button-prev::after{
+    color: var(--cadmiumRed);  
+}
 .landing__image-slider{
     position: absolute;
     width: 100%;
