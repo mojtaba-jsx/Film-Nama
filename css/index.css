@@ -285,30 +285,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** ////Modal Search Styles //// */
 
 .search-modal{
-    max-width: 40rem;
-    height: 14rem;
+    width: 40rem;
+    height: 20rem;
     border-radius: 1rem;
     background-color: var(--rangoonGreen);
     margin: 0 auto;
@@ -319,6 +300,8 @@
     transition: all 400ms ease-in;
     animation-name: showModal;
     animation-duration: 800ms;
+    position: absolute;
+    left: 30rem;
 }
 
 
@@ -422,9 +405,32 @@
 }
 
 /** ////Swiper Js Slider Styles //// */
-.swiper-button-next::after{
-    color: var(--cadmiumRed);
+.landing{
+    height: 50rem;
 }
+.swiper-button-next::after , .swiper-button-prev::after{
+    /* color: var(--cadmiumRed); */
+    display: none;
+}
+.swiper-button-next {
+    background-image: url('../icons/next-prev-btn.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    /* background-size: 26px; */
+    margin-right: 1rem;
+  }
+
+.swiper-button-prev{
+    background-image: url('../icons/next-prev-btn.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(180deg);
+    margin-left: 1rem;
+
+  }
+
 .swiper-button-prev::after{
     color: var(--cadmiumRed);  
 }

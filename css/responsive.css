@@ -3,8 +3,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .search-modal{
+    left: 16rem;
+}
 }
 
+@media screen and (max-width: 980px) {
+  .search-modal{
+    left: 10rem;
+}
+}
 @media screen and (max-width: 940px) {
 }
 
@@ -38,7 +46,9 @@
   }
 
 
-
+  .search-modal{
+    left: 16rem;
+}
 }
 
 @media screen and (max-width: 768px) {
