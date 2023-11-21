@@ -423,4 +423,102 @@
 
 /** ////Swiper Js Slider Styles //// */
 
+.landing__image-slider{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
 
+
+.swiper-slide__contents{
+    position: absolute;
+    top: 14rem;
+    left: 8rem;
+}
+
+.swiper-slide__contents-type{
+    background-color: var(--cadmiumRed);
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    color: var(--white);
+}
+
+.swiper-slide__contents-title{
+    font-size: 3.4rem;
+    color: var(--white);
+    font-family: 'poppins-bold', Courier, monospace;
+    margin-top: 1rem;
+}
+
+.swiper-slide__contents-text{
+    color: var(--white);
+    font-family: 'poppins-bold', Courier, monospace;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.swiper-slide__contents-category{
+    margin-top: 1rem;
+}
+
+.swiper-slide__contents-year{
+    font-size: 1.2rem;
+    font-family: 'poppins-bold', Courier, monospace;
+
+}
+
+.swiper-slide__contents-age{
+    color: var(--cadmiumRed);
+    font-size: 1.2rem;
+    font-family: 'poppins-regular', Courier, monospace;
+}
+
+.swiper-slide__contents-age-class{
+    color: var(--white);
+    font-family: 'poppins-regular', Courier, monospace;
+}
+
+.swiper-slide__contents-score{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.swiper-slide__contents-score-star{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    margin-right: 1rem;
+}
+
+.swiper-slide__contents-score-star svg{
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.swiper-slide__contents-score-genre{
+    color: var(--rangoonGreen);
+    font-family: 'poppins-bold', Courier, monospace;
+
+}
+
+.swiper-slide__contents-score-genre span{
+    color: var(--cadmiumRed);
+}
+
+.swiper-slide-btn{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--cadmiumRed);
+    font-family: 'poppins-bold', Courier, monospace;
+    color: var(--white);
+    margin-top: 2rem;
+    display: inline-block;
+}
