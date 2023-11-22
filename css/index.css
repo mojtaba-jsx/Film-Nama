@@ -460,6 +460,7 @@
     color: var(--white);
     font-family: 'poppins-bold', Courier, monospace;
     margin-top: 1rem;
+    text-shadow: 3px 4px 2px rgba(0, 0, 0, 1);
 }
 
 .swiper-slide__contents-text{
@@ -468,6 +469,7 @@
     line-height: 1.4rem;
     margin-top: 1rem;
     text-align: justify;
+    text-shadow: 3px 4px 2px rgba(0, 0, 0, 1);
 }
 
 .swiper-slide__contents-category{
