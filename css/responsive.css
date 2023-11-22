@@ -1,4 +1,4 @@
-@import "../swiper-bundle.min.css";
+
 
 /*! Resposive Media Queries */
 @media screen and (max-width: 1400px) {
@@ -140,9 +140,7 @@
   .swiper-slide-btn {
     margin-top: 0.5rem;
   }
-  .landing__Wrapper {
-    /* height: 18rem;     */
-  }
+
   .swiper-slide__contents-text {
     font-size: 0.7rem;
   }
