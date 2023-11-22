@@ -124,7 +124,6 @@
 
 .language__list{
     color: var(--white);
-    display: flex;
     flex-direction: column;
     background-color: var(--woodSmoke);
     position: absolute;
@@ -132,6 +131,8 @@
     top: 3.2rem;
     border-radius: 1rem;
     display: none;
+    position: absolute;
+    z-index: 1000;
 }
 
 .language__list-item{
@@ -382,6 +383,9 @@
     justify-content:end;
     align-items: center;
     display: none;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
 }
 .notif-modal{
     width: 20rem;
@@ -394,6 +398,7 @@
     font-family: 'poppins-bold', Courier, monospace;
     background-color: var(--rangoonGreen);
     color: var(--cadmiumRed);
+
 }
 
 .notif-modal__close{
