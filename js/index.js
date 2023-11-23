@@ -143,7 +143,10 @@ mobileMenuLangIcon.addEventListener('click',()=>{
 
 //!  Swiper Js
 
-const swiper = new Swiper('.swiper', {
+
+//!  Swiper Js Landing Section
+
+const swiper1 = new Swiper('.swiper-container-1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -169,5 +172,39 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+
+//!  Swiper Js Recommend Section
+  const swiper2 = new Swiper('.swiper-container-2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: '4',
+    centeredSlides: true,
+        autoplay: {
+        delay: 2000,
+      },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+
 
 
