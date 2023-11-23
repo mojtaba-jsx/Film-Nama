@@ -553,6 +553,9 @@ body{background-color: var(--woodSmoke);}
     margin-bottom: 10rem;
     margin-top: 4rem;
 }
+.swiper-wrapper{
+    align-items: center;
+}
 
 .recommend__title{
     font-size: 2rem;
@@ -571,9 +574,9 @@ body{background-color: var(--woodSmoke);}
     background-size: cover;
     background-position: center;
     background-clip:content-box;
-    width: 18rem;
-    height: 28rem;
-    border-radius: 1rem;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 0.5rem;
 }
 
 .recommend__slider-img{
