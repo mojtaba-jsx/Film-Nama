@@ -729,3 +729,44 @@ body{background-color: var(--woodSmoke);}
 .popular-slide{
     margin-top: 4rem;
 }
+
+
+/** ////Genre Section Styles //// */
+.genre__wrapper{
+    border: 1px solid red;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.genre__box{
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+}
+
+.genre__box-image{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.genre__box-content{
+    position: absolute;
+    left: 2rem;
+    top: 6rem;
+}
+
+.genre__box-title{
+   color: var(--white); 
+   font-family: 'inter-bold', Courier, monospace;   
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+
+.genre__box-text{ 
+   color: var(--white);
+   font-family: 'inter-regular', Courier, monospace;   
+   font-size: 0.8rem;
+}
