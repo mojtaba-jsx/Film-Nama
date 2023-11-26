@@ -745,7 +745,7 @@ body{background-color: var(--woodSmoke);}
     width: 20rem;
     height: 14rem;
     position: relative;
-    
+
     transition: all 140ms ease-in;
     opacity: 0.7;
 }
@@ -822,3 +822,50 @@ body{background-color: var(--woodSmoke);}
     }
 
   }
+
+
+
+
+
+/*& ////////////////////// */
+    /* & Footer Section */
+/*& ////////////////////// */
+
+/** ////Footer Top Section Styles //// */
+.footer-top{
+    margin-bottom: 8rem;
+}
+
+.footer-top__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer-top__col1-title{
+    color: var(--cadmiumRed);
+    font-size: 2rem;
+    font-family: 'inter-bold', Courier, monospace;
+}
+
+.footer-top__col1-text{
+    color: var(--white);
+    margin-top: 1rem;
+    line-height: 1.2rem;
+    font-family: 'inter-regular', Courier, monospace;
+}
+
+.footer-top__col2-title,.footer-top__col3-title,.footer-top__col4-title{
+    color: var(--white);
+    font-family: 'inter-bold', Courier, monospace;
+    margin-bottom: 1.4rem;
+}
+
+.footer-top__col2-item,.footer-top__col3-item,.footer-top__col4-item{
+    margin-bottom: 0.5rem;
+}
+
+.footer-top__col2-link,.footer-top__col3-link,.footer-top__col4-link{
+    color: var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+}
