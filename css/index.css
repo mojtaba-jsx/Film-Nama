@@ -869,3 +869,25 @@ body{background-color: var(--woodSmoke);}
     color: var(--white);
     font-family: 'poppins-medium', Courier, monospace;
 }
+
+
+
+.footer-top__col3-link svg{
+    margin-right: 0.5rem;
+}
+
+.footer-top__col3-telegram{
+    fill: rgb(27, 141, 227);
+}
+
+.footer-top__col3-instagram{
+    fill: red;
+}
+
+.footer-top__col3-facebook{
+    fill: rgb(34, 102, 228);
+}
+
+.footer-top__col3-youtube{
+    fill: red;
+}
