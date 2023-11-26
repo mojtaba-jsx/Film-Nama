@@ -561,6 +561,8 @@ body{background-color: var(--woodSmoke);}
     font-size: 2rem;
     font-family: 'inter-bold', Courier, monospace;
     color: var(--white);
+   text-shadow: 3px 2px 0px var(--cadmiumRed);
+
 
 }
 
@@ -641,9 +643,7 @@ body{background-color: var(--woodSmoke);}
 
 
 /** ////Popular Section Styles //// */
-.swiper-container-3{
-    direction: rtl;
-}
+
 .main{
     margin-bottom: 10rem;
     margin-top: 4rem;
@@ -656,6 +656,8 @@ body{background-color: var(--woodSmoke);}
     font-size: 2rem;
     font-family: 'inter-bold', Courier, monospace;
     color: var(--white);
+   text-shadow: 3px 2px 0px var(--cadmiumRed);
+
 
 }
 
@@ -733,7 +735,6 @@ body{background-color: var(--woodSmoke);}
 
 /** ////Genre Section Styles //// */
 .genre__wrapper{
-    border: 1px solid red;
     margin-right: 1rem;
     margin-left: 1rem;
     display: flex;
@@ -744,6 +745,15 @@ body{background-color: var(--woodSmoke);}
     width: 20rem;
     height: 20rem;
     position: relative;
+    margin-bottom: -4rem;
+}
+
+.genre__title{
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-family: 'inter-bold', Courier, monospace;
+    font-size: 2rem;
 }
 
 .genre__box-image{
@@ -770,3 +780,34 @@ body{background-color: var(--woodSmoke);}
    font-family: 'inter-regular', Courier, monospace;   
    font-size: 0.8rem;
 }
+
+
+.waviy {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2.5s infinite;
+    animation-delay: calc(.2s * var(--i));
+    color: var(--cadmiumRed);
+    font-family: 'poppins-bold', Courier, monospace;  
+    text-shadow: 3px 2px 0px rgb(217, 217, 217);
+  }
+
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+
+  }
