@@ -892,3 +892,12 @@ body{background-color: var(--woodSmoke);}
 .footer-top__col3-youtube{
     fill: red;
 }
+
+/** ////Footer Bottom Section Styles //// */
+
+.footer-bottom__text{
+    color: var(--white);
+    text-align: center;
+    font-family: 'inter-bold', Courier, monospace;
+    margin-bottom: 2rem;
+}
