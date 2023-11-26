@@ -12,6 +12,21 @@
   .swiper-slide__contents {
     top: 10rem;
   }
+
+  .footer-top__col2-item,.footer-top__col3-item,.footer-top__col4-item{
+    text-align: center;
+  }
+  .footer-top__col2-title,.footer-top__col3-title,.footer-top__col4-title{
+    text-align: center;
+  }
+  .footer-top__col1-text{
+    text-align: justify;
+  }
+  .footer-top__col1,.footer-top__col2,.footer-top__col3,.footer-top__col4{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 980px) {
