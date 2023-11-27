@@ -50,10 +50,10 @@ searchIcon.addEventListener('click',()=>{
     }
 })
 
-closeModalBtn.addEventListener('click',()=>{
-    modalSearch.style.display='none';
-    searchIcon.style.fill='white'
-})
+// closeModalBtn.addEventListener('click',()=>{
+//     modalSearch.style.display='none';
+//     searchIcon.style.fill='white'
+// })
 
 //! Notif Box Logic For Show And Hide Notif Box
 navbarBellIcon.addEventListener('click',()=>{
@@ -194,6 +194,10 @@ const swiper1 = new Swiper('.swiper-container-1', {
     // centeredSlidesBounds: true,
 
       breakpoints: {
+        280: {
+          slidesPerView: 1,
+          spaceBetween: 1,
+        },
         300: {
           slidesPerView: 1,
           spaceBetween: 1,
@@ -290,6 +294,10 @@ const swiper1 = new Swiper('.swiper-container-1', {
     // centeredSlidesBounds: true,
 
       breakpoints: {
+        280: {
+          slidesPerView: 1,
+          spaceBetween: 1,
+        },
         300: {
           slidesPerView: 1,
           spaceBetween: 1,
