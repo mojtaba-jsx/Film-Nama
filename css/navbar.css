@@ -1,0 +1,232 @@
+.header{
+    background-color: var(--woodSmoke);
+}
+/** ////Navbar Section Styles //// */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.navbar__logo{
+    color: var(--cadmiumRed);
+    font-size: 2rem;
+    font-family: 'inter-bold', Courier, monospace;
+    transition: all 140ms ease-in;
+}
+
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list-item{
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+}
+
+
+
+.navbar__list-link{
+    color: var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 140ms ease-in;
+}
+
+.navbar__list-link:hover{
+    color: var(--cadmiumRed);
+    text-shadow: 3px 0px 0px rgba(229, 9, 20, 1);
+    /* text-shadow: 3px 0px 0px rgba(255, 255, 255, 1); */
+    font-size: 1.4rem;
+}
+
+.navbar__list-item:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list-polygon{
+    margin-right: 0.4rem;
+}
+
+.navbar__list-item:nth-child(4){
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list-link-arrow{
+    margin-left: 0.4rem;
+}
+
+.navbar__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navabr__search-icon,
+.navbar__bell-icon,
+.navbar__lang-icon{
+    margin-right: 1.8rem;
+    cursor: pointer;
+}
+
+.navbar__lang-icon{
+    color: var(--white);
+    font-family: 'inter-medium', Courier, monospace;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__lang-icon-svg{
+    margin-right: 1rem;
+}
+
+.navbar__lang-icon-arrow{
+    margin-left: 0.4rem;
+}
+
+.navabr__search-icon-svg{
+    cursor: pointer;
+}
+.navbar__bell-icon{
+    cursor: pointer;
+}
+
+.navbar__lang-icon{
+    position: relative;
+}
+
+.navbar__lang-icon-arrow{
+    transform: rotate(180deg);
+    transition: all 200ms ease-in;
+}
+
+.language__list{
+    color: var(--white);
+    flex-direction: column;
+    background-color: var(--woodSmoke);
+    position: absolute;
+    right: 6rem;
+    top: 3.2rem;
+    border-radius: 1rem;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.language__list-item{
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--white);
+    font-family: 'inter-medium', Courier, monospace;
+}
+
+/** ////Mobile Menu Styles //// */
+.mobile-menu__icon{
+    fill: red;
+    font-size: 2rem;
+    display: none;
+    transition: all 200ms ease-in;
+}
+
+.mobile-menu{
+    display: none;
+    margin-top: -1rem;
+}
+
+.mobile-menu__searchbox{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: var(--rangoonGreen);
+    color: var(--white);
+    display: none;
+}
+
+.mobile-menu__searchbox::placeholder{
+    color: var(--white);
+    font-family: 'inter-regular', Courier, monospace;
+}
+
+.mobile-menu__searchbox-btn{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border:none;
+    outline: none;
+    background-color: var(--rangoonGreen);
+    color: var(--white);
+    font-family: 'inter-regular', Courier, monospace;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.mobile-menu__search-icon{
+    cursor: pointer;
+}
+
+.mobile-menu__notif-modal{
+    width: 14rem;
+    height: 10rem;
+    background-color: var(--woodSmoke);
+    color: var(--white);
+    border-radius: 1rem;
+    line-height: 10rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'inter-regular', Courier, monospace;
+    display: none;
+
+}
+
+.mobile-menu__lang-icon{
+    color: var(--white);
+    font-family: 'inter-regular', Courier, monospace;
+    cursor: pointer;
+
+}
+
+.mobile-menu__lang-list{
+    background-color: var(--woodSmoke);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    display: none;
+}
+
+.mobile-menu__lang-list-item{
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-family: 'inter-regular', Courier, monospace;
+}
+
+.mobile-menu__bell-icon{
+    cursor: pointer;
+}
+
+.mobile-menu__icon {
+    display: none;
+    margin-right: 2rem;
+  }
+
+  .navbar__logo {
+    margin-left: 2rem;
+  }
+
+ 

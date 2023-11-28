@@ -1,0 +1,17 @@
+@import './navbar.css';
+@import './fonts.css';
+@import './reset.css';
+@import './search-modal.css';
+@import './notif-box.css';
+@import './mobile-menu.css';
+@import './responsive.css';
+
+
+
+
+:root{
+    --woodSmoke:#0D0C11;
+    --cadmiumRed:#E50914;
+    --white:#ffffff;
+    --rangoonGreen:#17161B;
+}

@@ -1,0 +1,90 @@
+/** ////Modal Search Styles //// */
+
+.search-modal{
+    width: 40rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-color: var(--rangoonGreen);
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    z-index: 100;
+    display: none;
+    transition: all 400ms ease-in;
+    animation-name: showModal;
+    animation-duration: 800ms;
+    position: absolute;
+    left: 30rem;
+}
+
+
+@keyframes showModal{
+    from {
+        transform: scale(1,0.4);
+    }
+    to{
+        transform: scale(1);
+
+    }
+}
+
+.modal-show{
+    display: block;
+}
+
+.search-modal__title{
+    text-align: center;
+    font-size: 1rem;
+    color: var(--white);
+    font-family: 'poppins-bold', Courier, monospace;
+}
+
+.search-modal__input{
+    margin: 0 auto;
+    display: block;
+    margin-top: 2rem;
+    width: 18rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    transition: all 200ms ease-in;
+    background-color: var(--rangoonGreen);
+    color: var(--white);
+    font-family: 'inter-bold', Courier, monospace;
+
+}
+.search-modal__input:focus{
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    transition: all 200ms ease-in;
+}
+
+.search-modal__btn{
+    margin: 0 auto;
+    display: block;
+    margin-top: 1rem;
+    padding: 0.4rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--cadmiumRed);
+    color: var(--woodSmoke);
+    font-family: 'poppins-bold', Courier, monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-modal__close{
+    fill: var(--white);
+    font-size: 2rem;
+    display: block;
+    margin-top: -1rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.search-modal__close:hover{
+    fill: var(--cadmiumRed);
+}

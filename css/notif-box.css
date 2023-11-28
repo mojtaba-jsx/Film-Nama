@@ -1,0 +1,32 @@
+
+/** ////Notification Modal Styles //// */
+.notif-box{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+}
+.notif-modal{
+    width: 20rem;
+    height: 6rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+    line-height: 5rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    background-color: var(--rangoonGreen);
+    color: var(--cadmiumRed);
+
+}
+
+.notif-modal__close{
+    fill: var(--cadmiumRed);
+    display: block;
+    margin-left: 0.2rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+}
