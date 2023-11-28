@@ -6,12 +6,14 @@
 @import './mobile-menu.css';
 @import './responsive.css';
 
-
-
-
 :root{
     --woodSmoke:#0D0C11;
     --cadmiumRed:#E50914;
     --white:#ffffff;
     --rangoonGreen:#17161B;
 }
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
