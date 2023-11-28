@@ -36,6 +36,7 @@ body{background-color: var(--woodSmoke);}
 
 .film__desc-wrapper{
     display: flex;
+    justify-content: space-around;
 }
 
 .film__desc-wrapper-left{
@@ -48,8 +49,6 @@ body{background-color: var(--woodSmoke);}
     position: relative;
     border-radius: 1rem;
 }
-
- 
 
 .film__desc-wrapper-left-title{
     color: var(--white);
