@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/film.css">
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <link href="./vendor/video.js/video-js.css" rel="stylesheet" />
+    <link href="./vendor/video.js/forest-theme.css" rel="stylesheet">
+
     <title>Film</title>
 </head>
 <body>
@@ -314,8 +318,8 @@
                 </div>
 
                 <div class="film__desc-wrapper-right-btns">
-                  <span class="film__desc-wrapper-right-watch">
-                    <a href="#" class="film__desc-wrapper-right-watch-link">
+                  <span id="scroll-to-watch" class="film__desc-wrapper-right-watch">
+                    <a id="my-link" href="#my-video" class="film__desc-wrapper-right-watch-link">
                       <svg class="film__desc-wrapper-right-watch-svg" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.5 5.63398C11.1667 6.01888 11.1667 6.98113 10.5 7.36603L2.25 12.1292C1.58333 12.5141 0.75 12.0329 0.75 11.2631L0.75 1.73686C0.75 0.967059 1.58333 0.485935 2.25 0.870835L10.5 5.63398Z" fill=""/>
                         </svg>
@@ -330,16 +334,44 @@
                 </div>
               </div>
             </div>
+
+            <div class="film__desc-wrapper-about">
+              <h3 class="film__desc-wrapper-about-title">
+                About the movie
+              </h3>
+              <p class="film__desc-wrapper-about-text">
+                Mortal Kombat is an American series of martial arts action films based on the fighting video game series of the same name by Midway Games.The first film was produced by Lawrence Kasanoffs Threshold Entertainment. The first film, Mortal Kombat, was released in 1995 and its sequel, Mortal Kombat: Annihilation, was released in 1997. After the two films, game publisher Midway filed for bankruptcy. Warner Bros.
+              </p>
+            </div>
+
+            <div class="video-player">
+              <video
+              id="my-video"
+              class="video-js vjs-theme-forest"
+              controls
+              preload="auto"
+              width="100%"
+              height="100%"
+              poster="./images/film-1.jpg"
+              data-setup="{}"
+            >
+              <source src="./video/Mortal_Kombat_2021_Trailer.mkv" type="video/mp4" />
+             
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+              </div>
+            </div>
           </div>
 
-          <div class="film__desc-wrapper-about">
-            <h3 class="film__desc-wrapper-about-title">
-              About the movie
-            </h3>
-            <p class="film__desc-wrapper-about-text">
-              Mortal Kombat is an American series of martial arts action films based on the fighting video game series of the same name by Midway Games.The first film was produced by Lawrence Kasanoffs Threshold Entertainment. The first film, Mortal Kombat, was released in 1995 and its sequel, Mortal Kombat: Annihilation, was released in 1997. After the two films, game publisher Midway filed for bankruptcy. Warner Bros.
-            </p>
-          </div>
+
+
+
         </section>
       </main>
 
@@ -347,5 +379,7 @@
 
       <script src="./js/shared.js"></script>
     <script src="./js/film.js"></script>
+    <script src="./vendor/video.js/video.min.js"></script>
+
 </body>
 </html>
