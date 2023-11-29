@@ -83,6 +83,12 @@
     width: 100%;
     height: auto;
   }
+
+  .film__desc-wrapper-about{
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 875px) {
@@ -321,6 +327,10 @@
   }
   .film__desc-wrapper-right-watch-link {
     font-size: 1rem;
+  }
+
+  .film__desc-wrapper-about-text{
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 340px) {
