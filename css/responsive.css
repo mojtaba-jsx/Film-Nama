@@ -1,5 +1,3 @@
-
-
 /*! Resposive Media Queries */
 @media screen and (max-width: 1400px) {
 }
@@ -13,50 +11,37 @@
     top: 10rem;
   }
 
-  .footer-top__col2-item,.footer-top__col3-item,.footer-top__col4-item{
+  .footer-top__col2-item,
+  .footer-top__col3-item,
+  .footer-top__col4-item {
     text-align: center;
   }
-  .footer-top__col2-title,.footer-top__col3-title,.footer-top__col4-title{
+  .footer-top__col2-title,
+  .footer-top__col3-title,
+  .footer-top__col4-title {
     text-align: center;
   }
-  .footer-top__col1-text{
+  .footer-top__col1-text {
     text-align: justify;
   }
-  .footer-top__col1,.footer-top__col2,.footer-top__col3,.footer-top__col4{
+  .footer-top__col1,
+  .footer-top__col2,
+  .footer-top__col3,
+  .footer-top__col4 {
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  
-  .film__desc-wrapper-left{
+
+  .film__desc-wrapper-left {
     margin-left: 1rem;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  div.swiper-button-prev ,div.swiper-button-next {
+  div.swiper-button-prev,
+  div.swiper-button-next {
     top: 14rem;
-  }
-  .film__desc-wrapper{
-    flex-direction: column;
-  }
-  .film__desc-wrapper-left,.film__desc-wrapper-right{
-    margin: 0 auto;
-    display: block;
-    margin-top: 2rem;
-  }
-  .film__desc-wrapper-right-name{
-    text-align: center;
-  }
-  .film__desc-wrapper-right-like{
-    margin: 0 auto;
-  }
-  .film__desc-wrapper-right-btns{
-    margin: 0 auto;
-  }
-  .film__desc-wrapper-left-image{
-    width: auto;
-    height: auto;
   }
 }
 
@@ -72,15 +57,32 @@
   }
 }
 
-
-
 @media screen and (max-width: 940px) {
   .swiper-slide__contents {
     top: 8rem;
   }
-  .film__desc-wrapper-left{
-    margin-right: 16rem;
 }
+@media screen and (max-width: 925px) {
+  .film__desc-wrapper {
+    flex-direction: column;
+  }
+  .film__desc-wrapper-left {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .film__desc-wrapper-right {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .film__desc-wrapper-right-like {
+    margin: 0 auto;
+  }
+  .film__desc-wrapper-left-image {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 875px) {
@@ -151,16 +153,17 @@
   .swiper-slide__contents {
     top: 2rem;
   }
-  div.swiper-button-prev ,div.swiper-button-next {
+  div.swiper-button-prev,
+  div.swiper-button-next {
     top: 10rem;
   }
 
-  .landing__image-slider{
+  .landing__image-slider {
     max-height: 80vh;
     min-height: 80vh;
   }
-  .landing{
-  height: 80vh;
+  .landing {
+    height: 80vh;
   }
 }
 
@@ -203,15 +206,13 @@
     width: 1.2rem;
     height: 1.2rem;
   }
-  .swiper-slide__contents-score-star{
+  .swiper-slide__contents-score-star {
     font-size: 1rem;
   }
-  .swiper-slide__contents-score-genre{
+  .swiper-slide__contents-score-genre {
     margin-top: -1rem;
   }
 }
-
-
 
 @media screen and (max-width: 596px) {
   .swiper-slide__contents-score {
@@ -225,109 +226,144 @@
     position: relative;
   }
 
-  .landing__image-slider{
+  .landing__image-slider {
     max-height: 60vh;
     min-height: 60vh;
   }
-  .landing{
-  height: 60vh;
+  .landing {
+    height: 60vh;
+  }
+
+  .film__desc-wrapper-right-title {
+    font-size: 1.8rem;
   }
 }
-
-
-
-
-
+@media screen and (max-width: 500px) {
+  .film__desc-wrapper-left-image {
+    /* width: 10rem; */
+  }
+}
 
 @media screen and (max-width: 460px) {
-  .swiper-slide__contents-title{
+  .swiper-slide__contents-title {
     font-size: 1rem;
   }
-  .swiper-slide__contents-age-class{
+  .swiper-slide__contents-age-class {
     font-size: 0.8rem;
   }
-  .swiper-slide__contents-age,.swiper-slide__contents-year{
+  .swiper-slide__contents-age,
+  .swiper-slide__contents-year {
     font-size: 0.8rem;
   }
-.swiper-slide-btn{
-  font-size: 0.8rem;
-}
-.swiper-slide__contents-text{
-  margin-top: 0.5rem;
-}
+  .swiper-slide-btn {
+    font-size: 0.8rem;
+  }
+  .swiper-slide__contents-text {
+    margin-top: 0.5rem;
+  }
 
-.swiper-slide__contents-text{
-}
-.swiper-slide__contents{
-  margin-right: 2.8rem;
-}
-.genre__box{
-  margin-bottom: 2.8rem;
-}
+  .swiper-slide__contents-text {
+  }
+  .swiper-slide__contents {
+    margin-right: 2.8rem;
+  }
+  .genre__box {
+    margin-bottom: 2.8rem;
+  }
+  .film__desc-wrapper-left-title {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-
-  .swiper-slide__contents{
+  .swiper-slide__contents {
     margin-left: -4rem;
   }
-  .genre__box-text{
+  .genre__box-text {
     font-size: 0.8rem;
   }
-  .genre__box-content{
+  .genre__box-content {
     top: 4rem;
     left: 1rem;
   }
-  
-  .genre__box{
+
+  .genre__box {
     margin-bottom: -4rem;
   }
-  
-  .waviy span{
+
+  .waviy span {
     font-size: 1.8rem;
   }
 
-  .landing__image-slider{
+  .landing__image-slider {
     max-height: 55vh;
     min-height: 55vh;
   }
-  .landing{
-  height: 55vh;
+  .landing {
+    height: 55vh;
   }
 
-  .genre__box-title{
+  .genre__box-title {
     font-size: 1.4rem;
   }
-  .genre__box{
+  .genre__box {
     margin-bottom: 2.8rem;
   }
 }
 
 @media screen and (max-width: 340px) {
-  .genre__box{
+  .genre__box {
     margin-bottom: 2.8rem;
+  }
+
+  .film__desc-wrapper-right-name {
+    font-size: 1rem;
+  }
+  .film__desc-wrapper-right-watch-link {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 340px) {
-  .genre__box{
+  .genre__box {
     margin-bottom: 2.8rem;
+  }
+
+  .film__desc-wrapper-left-title {
+    font-size: 0.5rem;
+  }
+  .film__desc-wrapper-right-btns {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .film__desc-wrapper-right-watch,
+  .film__desc-wrapper-right-download {
+    padding: 0.8rem 1rem;
+  }
+  .film__desc-wrapper-right-watch-link,
+  .film__desc-wrapper-right-download-link {
+    font-size: 0.7rem;
+  }
+
+  .film__desc-wrapper-right-name {
+    text-wrap: wrap;
   }
 }
 
 @media screen and (max-width: 288px) {
-.recommend__title,.popular__title{
-  font-size: 1.5rem;
-}
-.genre__box{
-  margin-bottom: 2.8rem;
-}
+  .recommend__title,
+  .popular__title {
+    font-size: 1.5rem;
+  }
+  .genre__box {
+    margin-bottom: 2.8rem;
+  }
 }
 @media screen and (max-width: 280px) {
-  .genre__box-content{
+  .genre__box-content {
     top: 3.2rem;
     left: 1rem;
   }
-  .genre__box{
+  .genre__box {
     margin-bottom: 2.8rem;
   }
 }
