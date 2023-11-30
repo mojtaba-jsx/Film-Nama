@@ -1,11 +1,4 @@
-
-
-
-
-
 //!  Swiper Js
-
-
 //!  Swiper Js Landing Section
 
 const swiper1 = new Swiper('.swiper-container-1', {

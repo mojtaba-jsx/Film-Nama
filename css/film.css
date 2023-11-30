@@ -193,7 +193,7 @@ body{background-color: var(--woodSmoke);}
 
 
 
-/** ////Swiper Js Slider Styles //// */
+/** ////Comments Section  Styles //// */
 
 .comment__wrapper{
     display: flex;
@@ -294,4 +294,92 @@ body{background-color: var(--woodSmoke);}
 
 .comment__box-info-time{
     color: var(--cadmiumRed);
+}
+
+
+
+/** ////Swiper Js Similar Slider Styles //// */
+
+.swiper-wrapper{
+    align-items: center;
+}
+
+.similar__title{
+    font-size: 2rem;
+    font-family: 'inter-bold', Courier, monospace;
+    color: var(--white);
+   text-shadow: 3px 2px 0px var(--cadmiumRed);
+
+
+}
+
+.similar__title svg{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.similar__slider-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip:content-box;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 0.5rem;
+}
+
+.similar__slider-img{
+    opacity: 0.7;
+}
+
+.similar-slide:hover .similar__slider-img{
+    opacity: 1;
+    transition: all 200ms ease-in;
+}
+
+
+
+.similar__slider{
+    margin-top: 2rem;
+}
+
+.similar-slide{
+    position: relative;
+}
+
+.similar__slider-contents{
+    position: absolute;
+    top: 19rem;
+    left: 2rem;
+}
+
+.similar__slider-contents-category{
+    background-color: var(--cadmiumRed);
+    color: var(--white);
+    padding: 0.2rem 1rem;
+    border-radius: 0.4rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+.similar__slider-contents-stars{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.similar__slider-name{
+    font-size: 1.4rem;
+    color: var(--white);
+    font-family: 'inter-bold', Courier, monospace;
+    text-shadow: 3px -2px 5px rgba(18, 18, 18, 1);
+}
+
+.similar-slide:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.similar-slide{
+    margin-top: 4rem;
 }
