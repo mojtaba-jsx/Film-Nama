@@ -144,6 +144,19 @@
 
 }
 
+.comment__box{
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.comments__btn{
+  padding: 0rem 2rem;
+}
+
+.comment__box-info-text{
+  word-wrap:break-word;
+}
+
 
 
 }
@@ -267,6 +280,10 @@
   height: 15rem;
 
 }
+.comment__box-image{
+  width: 4rem;
+  height: 4rem;
+}
 }
 
 
@@ -336,9 +353,30 @@
     margin-bottom: 2.8rem;
   }
   .video-player{
-    width:20rem;
+    width:14.4rem;
     height: 10rem;
   
+  }
+
+  .comments__write{
+    display: block;
+  }
+  .comments__btn{
+    padding: 1rem 6rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: block;
+  }
+  .comments__input{
+    margin-left: 2rem;
+  }
+  .comments__avatar{
+    display: block;
+    margin: 0 auto;
+  }
+  .comments__input{
+    width: 74%;
   }
 }
 
