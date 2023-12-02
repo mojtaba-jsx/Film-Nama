@@ -19,4 +19,99 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-/* body{background-color: var(--woodSmoke);} */
+body{background-color: var(--woodSmoke);}
+
+
+/** Contact Us Section Styles */
+
+.contact-us{
+    margin-top: 2rem;
+}
+.contact-us__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__title{
+    color: var(--white);
+    font-family: 'poppins-bold', Courier, monospace;
+    font-size: 1.4rem;
+}
+
+.contact-us__text{
+    color: var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+
+}
+
+.contact-us__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us__form-name,.contact-us__form-email{
+    width: 34rem;
+    height: 2.8rem;
+    margin-bottom: 1rem;
+    background-color: var(--woodSmoke);
+    outline: none;
+    border: 1px solid var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+    color: var(--white);
+    padding: 1rem;
+}
+
+.contact-us__form-name::placeholder,.contact-us__form-email::placeholder{
+    color: var(--white);
+
+}
+
+.contact-us__form-text{
+    width: 34rem;
+    height: 10rem;
+    background-color: var(--woodSmoke);
+    outline: none;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--white);
+    font-family: 'poppins-medium', Courier, monospace;
+}
+
+.contact-us__form-text::placeholder{
+    color: var(--white);
+}
+
+
+.contact-us__form-box{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contact-us__form-btn{
+    background-color: var(--cadmiumRed);
+    font-family: 'poppins-bold', Courier, monospace;
+    padding: 1rem 5rem;
+}
+
+.contact-us__form-btn-link{
+    color: var(--white);
+}
+
+.contact-us__form-icons{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.contact-us__form-icons a{
+    margin-right: 1rem;
+}
+
+.contact-us__form-icon-instagram svg:hover{
+    color: rgb(0, 200, 255);
+}
