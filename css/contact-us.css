@@ -23,7 +23,9 @@ body{background-color: var(--woodSmoke);}
 
 
 /** Contact Us Section Styles */
-
+.main{
+    margin-bottom: 8rem;
+}
 .contact-us{
     margin-top: 2rem;
 }
