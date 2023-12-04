@@ -36,6 +36,10 @@
   .film__desc-wrapper-left {
     margin-left: 1rem;
   }
+
+  .contact-us__wrapper{
+    margin-left: 2rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -271,6 +275,10 @@
   .film__desc-wrapper-right-title {
     font-size: 1.8rem;
   }
+
+  .contact-us__form-name,.contact-us__form-email,.contact-us__form-text{
+    width: 25rem;
+  }
 }
 
 
@@ -283,6 +291,14 @@
 .comment__box-image{
   width: 4rem;
   height: 4rem;
+}
+.contact-us__form-box{
+  flex-direction: column;
+}
+.contact-us__form-btn{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 }
 
@@ -316,6 +332,17 @@
   .film__desc-wrapper-left-title {
     font-size: 0.7rem;
   }
+
+  .contact-us__form-name,.contact-us__form-email,.contact-us__form-text{
+    width: auto;
+    margin-right: 1rem;
+  }
+  .contact-us__form-btn{
+    width: 8rem;
+    padding: 1rem 2rem;
+  }
+
+
 }
 
 @media screen and (max-width: 400px) {
