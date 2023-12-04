@@ -18,3 +18,67 @@
     margin: 0 auto;
 }
 body{background-color: var(--woodSmoke);}
+
+
+
+                                /*! ////////////////////////// */
+                                        /* ^Styels */
+                                /*! //////////////////////// */
+
+/*& ////////////////////// */
+    /* & Main Section */
+/*& ////////////////////// */
+
+.movies__list{
+    margin-top: 4rem;
+}
+
+.movies__list-title{
+    color: var(--white);
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-family: 'poppins-bold', Courier, monospace;
+    color: var(--cadmiumRed);
+}
+.movies__list-geners{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--rangoonGreen);
+    border-radius: 1rem;
+    box-shadow: rgba(163, 158, 158, 0.4) 0px 2px 4px, rgba(195, 191, 191, 0.3) 0px 7px 13px -3px, rgba(202, 195, 195, 0.2) 0px -3px 0px inset;
+}
+
+.movies__list-geners-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.movies__list-geners-item{
+    margin-top: 1rem;
+    transition: all 200ms ease-in;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.movies__list-geners-link{
+    color: var(--white);
+    font-family: 'inter-medium', Courier, monospace;
+    font-size: 1rem;
+    padding: 0.2rem 0.4rem;
+    border-radius:0.2rem ;
+    transition: all 200ms ease-in;
+}
+
+.movies__list-geners-link:hover{
+    background-color: var(--cadmiumRed);
+    color: var(--woodSmoke);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+.movies__list-geners-item:hover{
+    transform: scale(1.4);
+}
