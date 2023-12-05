@@ -43,10 +43,14 @@ body{background-color: var(--woodSmoke);}
     margin-bottom: 2rem;
     font-family: 'poppins-bold', Courier, monospace;
     color: var(--cadmiumRed);
+
 }
 .movies__list-geners{
-    width: 100%;
-    height: 5rem;
+    width: 88%;
+    height: auto;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto;
     background-color: var(--rangoonGreen);
     border-radius: 1rem;
     box-shadow: rgba(163, 158, 158, 0.4) 0px 2px 4px, rgba(195, 191, 191, 0.3) 0px 7px 13px -3px, rgba(202, 195, 195, 0.2) 0px -3px 0px inset;
@@ -66,6 +70,8 @@ body{background-color: var(--woodSmoke);}
     transition: all 200ms ease-in;
     margin-right: 2rem;
     margin-left: 2rem;
+    text-align: center;
+    display: block;
 }
 
 .movies__list-geners-link{
@@ -75,6 +81,7 @@ body{background-color: var(--woodSmoke);}
     padding: 0.2rem 0.4rem;
     border-radius:0.2rem ;
     transition: all 200ms ease-in;
+
 }
 
 .movies__list-geners-link:hover{
@@ -92,8 +99,9 @@ body{background-color: var(--woodSmoke);}
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:space-around;
-    width: 100%;
+    width: 94%;
     height:auto;
+    margin: 0 auto;
     margin-top: 4rem;
 
     backdrop-filter: blur(16px) saturate(180%);

@@ -65,6 +65,7 @@
   .swiper-slide__contents {
     top: 8rem;
   }
+
 }
 @media screen and (max-width: 925px) {
   .film__desc-wrapper {
@@ -472,5 +473,8 @@
   }
   .genre__box {
     margin-bottom: 2.8rem;
+  }
+  .movies__list-box-img{
+    height: 100%;
   }
 }
