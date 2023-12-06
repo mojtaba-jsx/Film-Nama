@@ -32,6 +32,7 @@ body{background-color: var(--woodSmoke);}
 /** ////Accordion Menu  Styles //// */
 .accordion-box{
     margin-top: 4rem;
+    margin-bottom: 8rem;
 }
 
 .accordion {
