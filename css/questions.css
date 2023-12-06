@@ -5,6 +5,7 @@
 @import './notif-box.css';
 @import './search-modal.css';
 @import './mobile-menu.css';
+@import './responsive.css';
 
 :root{
     --woodSmoke:#0D0C11;
@@ -38,7 +39,11 @@ body{background-color: var(--woodSmoke);}
     color: var(--cadmiumRed);
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     height: 4rem;
     border-radius: 1rem;
     border: none;
@@ -49,6 +54,7 @@ body{background-color: var(--woodSmoke);}
     font-family: 'poppins-bold', Courier, monospace;
     text-align: center;
     box-shadow: var(--white) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
   }
 
   .accordion{
@@ -62,6 +68,9 @@ body{background-color: var(--woodSmoke);}
   
   .panel {
     padding: 0 18px;
+    width: 88%;
+    display: block;
+    margin: 0 auto;
     display: none;
     background-color: var(--rangoonGreen);
     color: var(--white);

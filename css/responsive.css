@@ -302,6 +302,11 @@
   margin-bottom: 2rem;
 }
 }
+@media screen and (max-width: 465px) {
+.accordion,.accordion-text{
+  font-size: 0.8rem;
+}
+}
 
 
 @media screen and (max-width: 460px) {
