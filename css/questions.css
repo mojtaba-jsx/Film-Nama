@@ -18,3 +18,67 @@
     margin: 0 auto;
 }
 body{background-color: var(--woodSmoke);}
+
+
+                                /*! ////////////////////////// */
+                                        /* ^Styels */
+                                /*! //////////////////////// */
+
+/*& ////////////////////// */
+    /* & Header Section */
+/*& ////////////////////// */
+
+/** ////Accordion Menu  Styles //// */
+.accordion-box{
+    margin-top: 4rem;
+}
+
+.accordion {
+    background-color: var(--rangoonGreen);
+    color: var(--cadmiumRed);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    transition: 0.4s;
+    font-family: 'poppins-bold', Courier, monospace;
+    text-align: center;
+    box-shadow: var(--white) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+
+  .accordion{
+    margin-bottom: 2rem;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--cadmiumRed); 
+    color: var(--white);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: var(--rangoonGreen);
+    color: var(--white);
+    overflow: hidden;
+    font-family: 'poppins-medium', Courier, monospace;
+    line-height: 1.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding:1rem;
+    background-color: var(--rangoonGreen);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--cadmiumRed) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+
+  .accordion-icon{
+    width: 2rem;
+    height: 2rem;
+  }
