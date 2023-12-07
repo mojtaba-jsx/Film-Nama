@@ -1,7 +1,8 @@
 /*! Resposive Media Queries */
+
 @media screen and (max-width: 1400px) {
 }
-
+/* *  /////////////////////////////////////////////////////// */
 @media screen and (max-width: 1200px) {
   .search-modal {
     left: 16rem;
@@ -37,10 +38,11 @@
     margin-left: 1rem;
   }
 
-  .contact-us__wrapper{
+  .contact-us__wrapper {
     margin-left: 2rem;
   }
 }
+/* *  /////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1000px) {
   div.swiper-button-prev,
@@ -60,13 +62,15 @@
     font-size: 0.8rem;
   }
 }
+/* *  /////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 940px) {
   .swiper-slide__contents {
     top: 8rem;
   }
-
 }
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 925px) {
   .film__desc-wrapper {
     flex-direction: column;
@@ -89,12 +93,14 @@
     height: auto;
   }
 
-  .film__desc-wrapper-about{
+  .film__desc-wrapper-about {
     text-align: center;
     margin-right: 2rem;
     margin-left: 2rem;
   }
 }
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 875px) {
   .navbar__logo {
@@ -105,6 +111,7 @@
     top: 1rem;
   }
 }
+/* *  /////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 840px) {
   .navbar__list,
@@ -142,29 +149,30 @@
     top: 6rem;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 820px) {
+  .video-player {
+    width: 40rem;
+  }
 
-.video-player{
-  width:40rem;
+  .comment__box {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
 
+  .comments__btn {
+    padding: 0rem 2rem;
+  }
+
+  .comment__box-info-text {
+    word-wrap: break-word;
+  }
 }
 
-.comment__box{
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
+/* *  /////////////////////////////////////////////////////// */
 
-.comments__btn{
-  padding: 0rem 2rem;
-}
-
-.comment__box-info-text{
-  word-wrap:break-word;
-}
-
-
-
-}
 
 @media screen and (max-width: 782px) {
   .swiper-slide__contents {
@@ -180,8 +188,14 @@
     font-size: 0.8rem;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 768px) {
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 680px) {
   .swiper-slide__contents {
@@ -200,11 +214,14 @@
     height: 80vh;
   }
 
-  .video-player{
-    width:30rem;
+  .video-player {
+    width: 30rem;
     height: 20rem;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 620px) {
   .swiper-slide__contents {
@@ -240,6 +257,9 @@
   }
 }
 
+/* *  /////////////////////////////////////////////////////// */
+
+
 @media screen and (max-width: 600px) {
   .swiper-slide__contents-score-star svg {
     width: 1.2rem;
@@ -252,6 +272,9 @@
     margin-top: -1rem;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 596px) {
   .swiper-slide__contents-score {
@@ -277,36 +300,45 @@
     font-size: 1.8rem;
   }
 
-  .contact-us__form-name,.contact-us__form-email,.contact-us__form-text{
+  .contact-us__form-name,
+  .contact-us__form-email,
+  .contact-us__form-text {
     width: 25rem;
   }
 }
 
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 500px) {
-.video-player{
-  width:25rem;
-  height: 15rem;
+  .video-player {
+    width: 25rem;
+    height: 15rem;
+  }
+  .comment__box-image {
+    width: 4rem;
+    height: 4rem;
+  }
+  .contact-us__form-box {
+    flex-direction: column;
+  }
+  .contact-us__form-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
 
-}
-.comment__box-image{
-  width: 4rem;
-  height: 4rem;
-}
-.contact-us__form-box{
-  flex-direction: column;
-}
-.contact-us__form-btn{
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-}
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 465px) {
-.accordion,.accordion-text{
-  font-size: 0.8rem;
+  .accordion,
+  .accordion-text {
+    font-size: 0.8rem;
+  }
 }
-}
+
+/* *  /////////////////////////////////////////////////////// */
 
 
 @media screen and (max-width: 460px) {
@@ -327,8 +359,6 @@
     margin-top: 0.5rem;
   }
 
-  .swiper-slide__contents-text {
-  }
   .swiper-slide__contents {
     margin-right: 2.8rem;
   }
@@ -339,17 +369,20 @@
     font-size: 0.7rem;
   }
 
-  .contact-us__form-name,.contact-us__form-email,.contact-us__form-text{
+  .contact-us__form-name,
+  .contact-us__form-email,
+  .contact-us__form-text {
     width: auto;
     margin-right: 1rem;
   }
-  .contact-us__form-btn{
+  .contact-us__form-btn {
     width: 8rem;
     padding: 1rem 2rem;
   }
-
-
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 400px) {
   .swiper-slide__contents {
@@ -385,33 +418,35 @@
   .genre__box {
     margin-bottom: 2.8rem;
   }
-  .video-player{
-    width:14.4rem;
+  .video-player {
+    width: 14.4rem;
     height: 10rem;
-  
   }
 
-  .comments__write{
+  .comments__write {
     display: block;
   }
-  .comments__btn{
+  .comments__btn {
     padding: 1rem 6rem;
     font-size: 1rem;
     margin: 0 auto;
     margin-top: 1rem;
     display: block;
   }
-  .comments__input{
+  .comments__input {
     margin-left: 2rem;
   }
-  .comments__avatar{
+  .comments__avatar {
     display: block;
     margin: 0 auto;
   }
-  .comments__input{
+  .comments__input {
     width: 74%;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 
 @media screen and (max-width: 340px) {
   .genre__box {
@@ -425,10 +460,13 @@
     font-size: 1rem;
   }
 
-  .film__desc-wrapper-about-text{
+  .film__desc-wrapper-about-text {
     font-size: 0.8rem;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 340px) {
   .genre__box {
     margin-bottom: 2.8rem;
@@ -455,6 +493,9 @@
   }
 }
 
+/* *  /////////////////////////////////////////////////////// */
+
+
 @media screen and (max-width: 288px) {
   .recommend__title,
   .popular__title {
@@ -463,14 +504,15 @@
   .genre__box {
     margin-bottom: 2.8rem;
   }
-  
-  .video-player{
-    width:14rem;
-    height: 8rem;
-  
-  }
 
+  .video-player {
+    width: 14rem;
+    height: 8rem;
+  }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 280px) {
   .genre__box-content {
     top: 3.2rem;
@@ -479,7 +521,10 @@
   .genre__box {
     margin-bottom: 2.8rem;
   }
-  .movies__list-box-img{
+  .movies__list-box-img {
     height: 100%;
   }
 }
+
+/* *  /////////////////////////////////////////////////////// */
+
