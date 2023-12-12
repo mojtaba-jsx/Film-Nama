@@ -234,7 +234,7 @@ const swiper1 = new Swiper('.swiper-container-1', {
 
   Swal.fire({
     title: 'توجه',
-    text:   'این قالب یا HTML CSS و کمی JS توسعه داده شده است و 5 صفحه می باشد',
+    text: 'این قالب با HTML CSS  و کمی JS و کتابخانه های Swiper Js , Sweet Alert2 , Video Js در 5 صفحه به صورت ریسپانسیو توسعه داده شده است',
     icon: 'info',
     animation:true,
     backdrop:true,
