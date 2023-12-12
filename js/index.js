@@ -232,3 +232,21 @@ const swiper1 = new Swiper('.swiper-container-1', {
 
 
 
+  Swal.fire({
+    title: 'توجه',
+    text:   'این قالب یا HTML CSS و کمی JS توسعه داده شده است و 5 صفحه می باشد',
+    icon: 'info',
+    animation:true,
+    backdrop:true,
+    iconColor:'#e50914',
+    textDirection: "rtl",
+    background:'#0d0c11',
+    confirmButtonText: 'متوجه شدم',
+    confirmButtonColor:'#e50914',
+    focusConfirm:true,
+  })
+
+
+
+
+

@@ -59,6 +59,11 @@
 
 .navbar__list-polygon{
     margin-right: 0.4rem;
+    display: none;
+}
+
+.navbar__list-polygon--active{
+    display: block;
 }
 
 .navbar__list-item:nth-child(4){

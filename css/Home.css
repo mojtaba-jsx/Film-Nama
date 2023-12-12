@@ -431,3 +431,16 @@ body {
     transform: rotateY(360deg);
   }
 }
+
+
+.swal2-modal {
+  direction: rtl;
+  font-family: "poppins-bold", Courier, monospace;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.swal2-confirm{
+  font-family: "poppins-bold", Courier, monospace;
+
+}
