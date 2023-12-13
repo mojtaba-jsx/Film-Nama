@@ -67,6 +67,9 @@ body {
   width: 100%;
   max-height: 100vh;
   min-height: 100vh;
+  background-position: center;
+  background-size: contain;
+  object-fit: contain;
 }
 
 .landing {
@@ -147,8 +150,11 @@ body {
 }
 
 .swiper-slide__contents-score-genre {
-  color: var(--rangoonGreen);
+  color: var(--white);
   font-family: "poppins-bold", Courier, monospace;
+}
+.swiper-slide{
+  cursor: pointer;
 }
 
 .swiper-slide__contents-score-genre span {
