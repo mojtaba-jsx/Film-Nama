@@ -1,342 +1,442 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Movie.css">
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/footer.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Movie.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link href="./vendor/video.js/video-js.css" rel="stylesheet" />
-    <link href="./vendor/video.js/forest-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="./vendor/swiper-js/swiper-bundle.css">
+    <link href="./vendor/video.js/forest-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./vendor/swiper-js/swiper-bundle.css" />
 
     <title>Film</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--! Start header Section -->
     <header class="header">
-        <div class="container">
-          <!--^ ---------------------Start NavBar------------------ -->
-          <nav class="navbar">
-            <h2 class="navbar__logo">FILM NAMA</h2>
-            <ul class="navbar__list">
-              <li class="navbar__list-item">
-                <a href="./Home.html" class="navbar__list-link"> Home </a>
-              </li>
-              <li class="navbar__list-item">
-                <a href="./Movies.html" class="navbar__list-link"> Movies </a>
-              </li>
-              <li class="navbar__list-item">
-                <a href="./Movie.html" class="navbar__list-link"> Movie </a>
-              </li>
-              <li class="navbar__list-item">
-                <a href="./Contact-Us.html" class="navbar__list-link"> Contact Us </a>
-              </li>
-              <li class="navbar__list-item">
-                <a href="./Questions.html" class="navbar__list-link"> Questions</a>
-              </li>
-            </ul>
-            <div class="navbar__icons">
-              <span class="navabr__search-icon">
-                <svg
-                  class="navabr__search-icon-svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
-                  />
-                </svg>
-              </span>
-              <span class="navbar__bell-icon">
-                <svg
-                  class="navbar__bell-icon-svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
+      <div class="container">
+        <!--^ ---------------------Start NavBar------------------ -->
+        <nav class="navbar">
+          <h2 class="navbar__logo">FILM NAMA</h2>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="./Home.html" class="navbar__list-link"> Home </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Movies.html" class="navbar__list-link"> Movies </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Movie.html" class="navbar__list-link"> Movie </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Contact-Us.html" class="navbar__list-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Questions.html" class="navbar__list-link">
+                Questions</a
+              >
+            </li>
+          </ul>
+          <div class="navbar__icons">
+            <span class="navabr__search-icon">
+              <svg
+                class="navabr__search-icon-svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
+                />
+              </svg>
+            </span>
+            <span class="navbar__bell-icon">
+              <svg
+                class="navbar__bell-icon-svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="navbar__lang-icon">
+              <svg
+                class="navbar__lang-icon-svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
+                />
+              </svg>
+              ENG
+              <svg
+                class="navbar__lang-icon-arrow"
+                width="12"
+                height="6"
+                viewBox="0 0 12 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 1L6 5L10.5 1"
                   stroke="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span class="navbar__lang-icon">
-                <svg
-                  class="navbar__lang-icon-svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
-                  />
-                </svg>
-                ENG
-                <svg
-                  class="navbar__lang-icon-arrow"
-                  width="12"
-                  height="6"
-                  viewBox="0 0 12 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.5 1L6 5L10.5 1"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <div class="language__list">
-                <span class="language__list-item">ENG</span>
-                <span class="language__list-item">FA</span>
-              </div>
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div class="language__list">
+              <span class="language__list-item">ENG</span>
+              <span class="language__list-item">FA</span>
             </div>
-            <svg
-              class="mobile-menu__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-              />
-            </svg>
-          </nav>
-          <!--^ ---------------------End NavBar------------------ -->
-        </div>
-      </header>
+          </div>
+          <svg
+            class="mobile-menu__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </nav>
+        <!--^ ---------------------End NavBar------------------ -->
+      </div>
+    </header>
     <!--! End header Section -->
 
     <!--& Start SearchModal-notifBox-mobileMenu Section -->
-      <section class="search-modal">
+    <section class="search-modal">
+      <h2 class="search-modal__title">Search Your Movie</h2>
+      <input
+        placeholder="Enter Movie Name ..."
+        class="search-modal__input"
+        type="text"
+      />
+      <button class="search-modal__btn">Search</button>
+    </section>
 
-        <h2 class="search-modal__title">Search Your Movie</h2>
+    <section class="notif-box">
+      <div class="notif-modal">
+        <span class="notif-modal__title">Notification Box is Empty</span>
+      </div>
+    </section>
+
+    <section class="mobile-menu">
+      <!-- <h2 class="mobile-menu__logo">FILM NAMA</h2> -->
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item">
+          <svg
+            class="mobile-menu__list-polygon"
+            width="9"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
+              fill="#E50914"
+            />
+          </svg>
+          <a href="./Home.html" class="mobile-menu__list-link"> Home </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Movies.html" class="mobile-menu__list-link"> Movies </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Contact-Us.html" class="mobile-menu__list-link">
+            Contact Us
+          </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Questions.html" class="mobile-menu__list-link">
+            Questions
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__icons">
+        <span class="mobile-menu__search-icon">
+          <svg
+            class="mobile-menu__search-icon-svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
+            />
+          </svg>
+        </span>
         <input
-          placeholder="Enter Movie Name ..."
-          class="search-modal__input"
+          class="mobile-menu__searchbox"
           type="text"
+          placeholder="Search The Movie"
         />
-        <button class="search-modal__btn">Search</button>
-      </section>
-
-      <section class="notif-box">
-        <div class="notif-modal">
-          <span class="notif-modal__title">Notification Box is Empty</span>
+        <button class="mobile-menu__searchbox-btn">Search</button>
+        <span class="mobile-menu__bell-icon">
+          <svg
+            class="mobile-menu__bell-icon-svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__notif-modal">
+          <span class="mobile-menu__notif-modal-title"
+            >Notification Box is Empty</span
+          >
         </div>
-      </section>
 
-      <section class="mobile-menu">
-        <!-- <h2 class="mobile-menu__logo">FILM NAMA</h2> -->
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__list-item">
-            <svg
-              class="mobile-menu__list-polygon"
-              width="9"
-              height="14"
-              viewBox="0 0 9 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
-                fill="#E50914"
-              />
-            </svg>
-            <a href="./Home.html" class="mobile-menu__list-link"> Home </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Movies.html" class="mobile-menu__list-link"> Movies </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Contact-Us.html" class="mobile-menu__list-link"> Contact Us </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Questions.html" class="mobile-menu__list-link"> Questions </a>
-          </li>
-        </ul>
-        <div class="mobile-menu__icons">
-          <span class="mobile-menu__search-icon">
-            <svg
-              class="mobile-menu__search-icon-svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
-              />
-            </svg>
-          </span>
-          <input
-            class="mobile-menu__searchbox"
-            type="text"
-            placeholder="Search The Movie"
-          />
-          <button class="mobile-menu__searchbox-btn">Search</button>
-          <span class="mobile-menu__bell-icon">
-            <svg
-              class="mobile-menu__bell-icon-svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
+        <span class="mobile-menu__lang-icon">
+          <svg
+            class="mobile-menu__lang-icon-svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
+            />
+          </svg>
+          ENG
+          <svg
+            class="navbar__lang-icon-arrow"
+            width="12"
+            height="6"
+            viewBox="0 0 12 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.5 1L6 5L10.5 1"
               stroke="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-          <div class="mobile-menu__notif-modal">
-            <span class="mobile-menu__notif-modal-title"
-              >Notification Box is Empty</span
-            >
-          </div>
-  
-          <span class="mobile-menu__lang-icon">
-            <svg
-              class="mobile-menu__lang-icon-svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
-              />
-            </svg>
-            ENG
-            <svg
-              class="navbar__lang-icon-arrow"
-              width="12"
-              height="6"
-              viewBox="0 0 12 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1L6 5L10.5 1"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-            </svg>
-          </span>
-          <div class="mobile-menu__lang-list">
-            <span class="mobile-menu__lang-list-item">ENG</span>
-            <span class="mobile-menu__lang-list-item">FA</span>
-          </div>
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__lang-list">
+          <span class="mobile-menu__lang-list-item">ENG</span>
+          <span class="mobile-menu__lang-list-item">FA</span>
         </div>
-      </section>
+      </div>
+    </section>
     <!--& End SearchModal-notifBox-mobileMenu Section -->
 
-      <main class="main">
-        <section class="film__description">
-          <div class="container">
-            <div class="film__desc-wrapper">
-              <div class="film__desc-wrapper-left">
-                <span class="film__desc-wrapper-left-title">Fantasy</span>
-                <img src="./images/film-1.jpg" alt="" class="film__desc-wrapper-left-image">
-              </div>
-
-              <div class="film__desc-wrapper-right">
-                <h2 class="film__desc-wrapper-right-title">
-                  Mortal Kombat
-                </h2>
-                <span class="film__desc-wrapper-right-name">
-                    Name: 
-                    <a href="#" class="film__desc-wrapper-right-name-link">
-                      Mortal Kombat
-                    </a>
-                </span>
-                <span class="film__desc-wrapper-right-name">
-                    Time: 
-                    <a href="#" class="film__desc-wrapper-right-name-link">
-                      2 hours 12 minutes 8 seconds
-                    </a>
-                </span>
-                <span class="film__desc-wrapper-right-name">
-                    Date: 
-                    <a href="#" class="film__desc-wrapper-right-name-link">
-                      2022
-                    </a>
-                </span>
-                <span class="film__desc-wrapper-right-name">
-                    Genre: 
-                    <a href="#" class="film__desc-wrapper-right-name-link">
-                      Fantasy
-                    </a>
-                </span>
-                <span class="film__desc-wrapper-right-name">
-                    Language: 
-                    <a href="#" class="film__desc-wrapper-right-name-link">
-                      English
-                    </a>
-                </span>
-
-                <div class="film__desc-wrapper-right-like">
-                  <span class="film__desc-wrapper-right-like-btn">
-                    <svg class="film__desc-wrapper-right-like-btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 8H14.388L15.511 4.633C15.713 4.025 15.611 3.351 15.236 2.831C14.861 2.311 14.253 2 13.612 2H12C11.703 2 11.422 2.132 11.231 2.36L6.531 8H4C2.897 8 2 8.897 2 10V19C2 20.103 2.897 21 4 21H17.307C17.7139 20.9986 18.1108 20.8738 18.4452 20.6421C18.7796 20.4103 19.0359 20.0825 19.18 19.702L21.937 12.351C21.9789 12.2387 22.0002 12.1198 22 12V10C22 8.897 21.103 8 20 8ZM4 10H6V19H4V10ZM20 11.819L17.307 19H8V9.362L12.468 4H13.614L12.052 8.683C12.0013 8.83331 11.9871 8.99355 12.0107 9.15043C12.0343 9.3073 12.095 9.45629 12.1877 9.58504C12.2803 9.71379 12.4024 9.8186 12.5436 9.89076C12.6849 9.96293 12.8414 10.0004 13 10H20V11.819Z" fill="#0DE509"/>
-                      </svg>
-                      1K
-                  </span>
-                  <span class="film__desc-wrapper-right-dislike-btn">
-                    <svg class="film__desc-wrapper-right-dislike-btn-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 3H6.693C6.28611 3.00135 5.88922 3.12616 5.55478 3.35792C5.22035 3.58969 4.96413 3.91749 4.82 4.298L2.063 11.649C2.02114 11.7613 1.9998 11.8802 2 12V14C2 15.103 2.897 16 4 16H9.612L8.49 19.367C8.38997 19.6676 8.36264 19.9877 8.41027 20.301C8.4579 20.6142 8.57913 20.9117 8.764 21.169C9.14 21.689 9.746 22 10.388 22H12C12.297 22 12.578 21.868 12.769 21.64L17.469 16H20C21.103 16 22 15.103 22 14V5C22 3.897 21.103 3 20 3ZM11.531 20H10.386L11.948 15.316C11.998 15.1657 12.0117 15.0058 11.9878 14.8492C11.9639 14.6926 11.9032 14.544 11.8106 14.4155C11.7181 14.287 11.5963 14.1823 11.4554 14.1101C11.3144 14.0379 11.1584 14.0001 11 14H4V12.181L6.693 5H16V14.638L11.531 20ZM18 14V5H20L20.001 14H18Z" fill="#E50914"/>
-                      </svg>
-                      0
-                  </span>
-                </div>
-
-                <div class="film__desc-wrapper-right-btns">
-                  <span id="scroll-to-watch" class="film__desc-wrapper-right-watch">
-                    <a id="my-link" href="#my-video" class="film__desc-wrapper-right-watch-link">
-                      <svg class="film__desc-wrapper-right-watch-svg" width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.5 5.63398C11.1667 6.01888 11.1667 6.98113 10.5 7.36603L2.25 12.1292C1.58333 12.5141 0.75 12.0329 0.75 11.2631L0.75 1.73686C0.75 0.967059 1.58333 0.485935 2.25 0.870835L10.5 5.63398Z" fill=""/>
-                        </svg>
-                        WATCH                        
-                    </a>
-                  </span>
-                  <span class="film__desc-wrapper-right-download">
-                    <a href="#" class="film__desc-wrapper-right-download-link">
-                        Download                        
-                    </a>
-                  </span>
-                </div>
-              </div>
+    <main class="main">
+      <section class="film__description">
+        <div class="container">
+          <div class="film__desc-wrapper">
+            <div class="film__desc-wrapper-left">
+              <span class="film__desc-wrapper-left-title">Fantasy</span>
+              <img
+                src="./images/film-1.jpg"
+                alt=""
+                class="film__desc-wrapper-left-image"
+              />
             </div>
 
-            <div class="film__desc-wrapper-about">
-              <h3 class="film__desc-wrapper-about-title">
-                About the movie
-              </h3>
-              <p class="film__desc-wrapper-about-text">
-                Mortal Kombat is an American series of martial arts action films based on the fighting video game series of the same name by Midway Games.The first film was produced by Lawrence Kasanoffs Threshold Entertainment. The first film, Mortal Kombat, was released in 1995 and its sequel, Mortal Kombat: Annihilation, was released in 1997. After the two films, game publisher Midway filed for bankruptcy. Warner Bros.
-              </p>
-            </div>
+            <div class="film__desc-wrapper-right">
+              <h2 class="film__desc-wrapper-right-title">Mortal Kombat</h2>
+              <div class="film__desc-wrapper-right-box">
+                <span class="film__desc-wrapper-right-name">
+                  Year
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    2020
+                  </a>
+                </span>
+  
+                <span class="film__desc-wrapper-right-name">
+                  Released
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    14 Oct 1994
+                  </a>
+                </span>
+  
+                <span class="film__desc-wrapper-right-name">
+                  RunTime:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    142 Minute
+                  </a>
+                </span>
+  
+                <span class="film__desc-wrapper-right-name">
+                  Director:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    Frank Darabont
+                  </a>
+                </span>
+                
+                <span class="film__desc-wrapper-right-name">
+                  Writor:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    Stephen King (short story \"Rita Hayworth and Shawshank Redemption\"), Frank Darabont (screenplay)
+                  </a>
+                </span>
 
-            <div class="video-player">
-              <video
+                <span class="film__desc-wrapper-right-name">
+                  Actors:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    Tim Robbins, Morgan Freeman, Bob Gunton, William Sadler
+                  </a>
+                </span>
+
+                <span class="film__desc-wrapper-right-name">
+                  Country:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    USA
+                  </a>
+                </span>
+
+                <span class="film__desc-wrapper-right-name">
+                  Awards:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    Nominated for 7 Oscars. Another 19 wins & 30 nominations
+                  </a>
+                </span>
+
+                <span class="film__desc-wrapper-right-name">
+                  MetaScore:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    English
+                  </a>
+                </span>
+
+                <span class="film__desc-wrapper-right-name">
+                  IMDB Rating:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    English
+                  </a>
+                </span>
+
+                <span class="film__desc-wrapper-right-name">
+                  Genres:
+                  <a href="#" class="film__desc-wrapper-right-name-link">
+                    Crime - Drama
+                  </a>
+                </span>
+
+              </div>
+
+
+              <div class="film__desc-wrapper-right-like">
+                <span class="film__desc-wrapper-right-like-btn">
+                  <svg
+                    class="film__desc-wrapper-right-like-btn-svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 8H14.388L15.511 4.633C15.713 4.025 15.611 3.351 15.236 2.831C14.861 2.311 14.253 2 13.612 2H12C11.703 2 11.422 2.132 11.231 2.36L6.531 8H4C2.897 8 2 8.897 2 10V19C2 20.103 2.897 21 4 21H17.307C17.7139 20.9986 18.1108 20.8738 18.4452 20.6421C18.7796 20.4103 19.0359 20.0825 19.18 19.702L21.937 12.351C21.9789 12.2387 22.0002 12.1198 22 12V10C22 8.897 21.103 8 20 8ZM4 10H6V19H4V10ZM20 11.819L17.307 19H8V9.362L12.468 4H13.614L12.052 8.683C12.0013 8.83331 11.9871 8.99355 12.0107 9.15043C12.0343 9.3073 12.095 9.45629 12.1877 9.58504C12.2803 9.71379 12.4024 9.8186 12.5436 9.89076C12.6849 9.96293 12.8414 10.0004 13 10H20V11.819Z"
+                      fill="#0DE509"
+                    />
+                  </svg>
+                  1K
+                </span>
+                <span class="film__desc-wrapper-right-dislike-btn">
+                  <svg
+                    class="film__desc-wrapper-right-dislike-btn-svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 3H6.693C6.28611 3.00135 5.88922 3.12616 5.55478 3.35792C5.22035 3.58969 4.96413 3.91749 4.82 4.298L2.063 11.649C2.02114 11.7613 1.9998 11.8802 2 12V14C2 15.103 2.897 16 4 16H9.612L8.49 19.367C8.38997 19.6676 8.36264 19.9877 8.41027 20.301C8.4579 20.6142 8.57913 20.9117 8.764 21.169C9.14 21.689 9.746 22 10.388 22H12C12.297 22 12.578 21.868 12.769 21.64L17.469 16H20C21.103 16 22 15.103 22 14V5C22 3.897 21.103 3 20 3ZM11.531 20H10.386L11.948 15.316C11.998 15.1657 12.0117 15.0058 11.9878 14.8492C11.9639 14.6926 11.9032 14.544 11.8106 14.4155C11.7181 14.287 11.5963 14.1823 11.4554 14.1101C11.3144 14.0379 11.1584 14.0001 11 14H4V12.181L6.693 5H16V14.638L11.531 20ZM18 14V5H20L20.001 14H18Z"
+                      fill="#E50914"
+                    />
+                  </svg>
+                  0
+                </span>
+              </div>
+
+              <div class="film__desc-wrapper-right-btns">
+                <span
+                  id="scroll-to-watch"
+                  class="film__desc-wrapper-right-watch"
+                >
+                  <a
+                    id="my-link"
+                    href="#my-video"
+                    class="film__desc-wrapper-right-watch-link"
+                  >
+                    <svg
+                      class="film__desc-wrapper-right-watch-svg"
+                      width="11"
+                      height="13"
+                      viewBox="0 0 11 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5 5.63398C11.1667 6.01888 11.1667 6.98113 10.5 7.36603L2.25 12.1292C1.58333 12.5141 0.75 12.0329 0.75 11.2631L0.75 1.73686C0.75 0.967059 1.58333 0.485935 2.25 0.870835L10.5 5.63398Z"
+                        fill=""
+                      />
+                    </svg>
+                    WATCH
+                  </a>
+                </span>
+                <span class="film__desc-wrapper-right-download">
+                  <a href="#" class="film__desc-wrapper-right-download-link">
+                    Download
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="film__desc-wrapper-about">
+            <h3 class="film__desc-wrapper-about-title">About the movie</h3>
+            <p class="film__desc-wrapper-about-text">
+              Mortal Kombat is an American series of martial arts action films
+              based on the fighting video game series of the same name by Midway
+              Games.The first film was produced by Lawrence Kasanoffs Threshold
+              Entertainment. The first film, Mortal Kombat, was released in 1995
+              and its sequel, Mortal Kombat: Annihilation, was released in 1997.
+              After the two films, game publisher Midway filed for bankruptcy.
+              Warner Bros.
+            </p>
+          </div>
+
+          <div class="video-player">
+            <video
               id="my-video"
               class="video-js vjs-theme-forest"
               controls
@@ -346,822 +446,857 @@
               poster="./images/film-1.jpg"
               data-setup="{}"
             >
-              <source src="./video/Mortal_Kombat_2021_Trailer.mkv" type="video/mp4" />
-             
+              <source
+                src="./video/Mortal_Kombat_2021_Trailer.mkv"
+                type="video/mp4"
+              />
+
               <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider upgrading to a
-                web browser that
-                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
                   >supports HTML5 video</a
                 >
               </p>
             </video>
+          </div>
+        </div>
+        <div></div>
+      </section>
+
+      <section class="comments">
+        <div class="container">
+          <div class="comment__wrapper">
+            <h5 class="comments__title">
+              <svg
+                class="comments__title-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM4 7H16V9H4V7ZM12 12H4V10H12V12ZM16 6H4V4H16V6Z"
+                  fill="#E50914"
+                />
+              </svg>
+              Comments
+            </h5>
+            <div class="comments__write">
+              <img src="./images/comment-submit.png" class="comments__avatar" />
+              <input
+                type="text"
+                class="comments__input"
+                placeholder="Enter Your Comment ..."
+              />
+              <button class="comments__btn">Submit</button>
+            </div>
+
+            <div class="comments__boxes">
+              <div class="comment__box">
+                <img
+                  src="./images/user-comment.png"
+                  class="comment__box-image"
+                />
+                <div class="comment__box-info">
+                  <h6 class="comment__box-info-user">
+                    Asadbek Shomurodov
+                    <span class="comment__box-info-time">a day ago</span>
+                  </h6>
+                  <p class="comment__box-info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, veniam.
+                  </p>
+                </div>
+              </div>
+              <div class="comment__box">
+                <img
+                  src="./images/user-comment.png"
+                  class="comment__box-image"
+                />
+                <div class="comment__box-info">
+                  <h6 class="comment__box-info-user">
+                    Asadbek Shomurodov
+                    <span class="comment__box-info-time">a day ago</span>
+                  </h6>
+                  <p class="comment__box-info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, veniam.
+                  </p>
+                </div>
+              </div>
+              <div class="comment__box">
+                <img
+                  src="./images/user-comment.png"
+                  class="comment__box-image"
+                />
+                <div class="comment__box-info">
+                  <h6 class="comment__box-info-user">
+                    Asadbek Shomurodov
+                    <span class="comment__box-info-time">a day ago</span>
+                  </h6>
+                  <p class="comment__box-info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, veniam.
+                  </p>
+                </div>
+              </div>
+              <div class="comment__box">
+                <img
+                  src="./images/user-comment.png"
+                  class="comment__box-image"
+                />
+                <div class="comment__box-info">
+                  <h6 class="comment__box-info-user">
+                    Asadbek Shomurodov
+                    <span class="comment__box-info-time">a day ago</span>
+                  </h6>
+                  <p class="comment__box-info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, veniam.
+                  </p>
+                </div>
+              </div>
+              <div class="comment__box">
+                <img
+                  src="./images/user-comment.png"
+                  class="comment__box-image"
+                />
+                <div class="comment__box-info">
+                  <h6 class="comment__box-info-user">
+                    Asadbek Shomurodov
+                    <span class="comment__box-info-time">a day ago</span>
+                  </h6>
+                  <p class="comment__box-info-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia, veniam.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="comments">
+      <section class="similar">
+        <div class="similar__wrapper">
           <div class="container">
-            <div class="comment__wrapper">
-              <h5 class="comments__title">
-                <svg class="comments__title-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM4 7H16V9H4V7ZM12 12H4V10H12V12ZM16 6H4V4H16V6Z" fill="#E50914"/>
-                  </svg>
-                  Comments                  
-              </h5>
-              <div class="comments__write">
-                <img src="./images/comment-submit.png" class="comments__avatar"></img>
-                <input type="text" class="comments__input" placeholder="Enter Your Comment ...">
-                <button class="comments__btn">Submit</button>
-              </div>
-
-              <div class="comments__boxes">
-                <div class="comment__box">
-                  <img src="./images/user-comment.png" class="comment__box-image"></img>
-                  <div class="comment__box-info">
-                    <h6 class="comment__box-info-user">
-                      Asadbek Shomurodov
-                      <span class="comment__box-info-time">a day ago</span>
-                    </h6>
-                    <p class="comment__box-info-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam.
-                    </p>
-                  </div>
-                </div>
-                <div class="comment__box">
-                  <img src="./images/user-comment.png" class="comment__box-image"></img>
-                  <div class="comment__box-info">
-                    <h6 class="comment__box-info-user">
-                      Asadbek Shomurodov
-                      <span class="comment__box-info-time">a day ago</span>
-                    </h6>
-                    <p class="comment__box-info-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam.
-                    </p>
-                  </div>
-                </div>
-                <div class="comment__box">
-                  <img src="./images/user-comment.png" class="comment__box-image"></img>
-                  <div class="comment__box-info">
-                    <h6 class="comment__box-info-user">
-                      Asadbek Shomurodov
-                      <span class="comment__box-info-time">a day ago</span>
-                    </h6>
-                    <p class="comment__box-info-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam.
-                    </p>
-                  </div>
-                </div>
-                <div class="comment__box">
-                  <img src="./images/user-comment.png" class="comment__box-image"></img>
-                  <div class="comment__box-info">
-                    <h6 class="comment__box-info-user">
-                      Asadbek Shomurodov
-                      <span class="comment__box-info-time">a day ago</span>
-                    </h6>
-                    <p class="comment__box-info-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam.
-                    </p>
-                  </div>
-                </div>
-                <div class="comment__box">
-                  <img src="./images/user-comment.png" class="comment__box-image"></img>
-                  <div class="comment__box-info">
-                    <h6 class="comment__box-info-user">
-                      Asadbek Shomurodov
-                      <span class="comment__box-info-time">a day ago</span>
-                    </h6>
-                    <p class="comment__box-info-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h2 class="similar__title">
+              <svg
+                width="9"
+                height="14"
+                viewBox="0 0 9 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
+                  fill="#E50914"
+                />
+              </svg>
+              Similar Movies
+            </h2>
           </div>
-        </section>
 
-
-        <section class="similar">
-          <div class="similar__wrapper">
-            <div class="container">
-              <h2 class="similar__title">
-                <svg
-                  width="9"
-                  height="14"
-                  viewBox="0 0 9 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
-                    fill="#E50914"
+          <div class="similar__slider">
+            <!-- Slider main container -->
+            <div class="swiper swiper-film">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name"> AquaMan </span>
+                  </div>
+                  <img
+                    src="./images/aquaman-1.jpg"
+                    alt="image"
+                    class="similar__slider-img"
                   />
-                </svg>
-                Similar Movies
-              </h2>
-            </div>
-  
-            <div class="similar__slider">
-              <!-- Slider main container -->
-              <div class="swiper swiper-film">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name"> AquaMan </span>
-                    </div>
-                    <img
-                      src="./images/aquaman-1.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
-  
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name">WonderWoman</span>
-                    </div>
-                    <img
-                      src="./images/wonrder-woman1.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
-  
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name">John Wick</span>
-                    </div>
-                    <img
-                      src="./images/john-wick.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
-  
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name">Flash</span>
-                    </div>
-                    <img
-                      src="./images/flsh-1.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
-  
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name">Mission Impossible</span>
-                    </div>
-                    <img
-                      src="./images/mission-impossible.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
-  
-                  <div class="swiper-slide similar-slide">
-                    <div class="similar__slider-contents">
-                      <span class="similar__slider-contents-category"
-                        >Fantasy</span
-                      >
-                      <div class="similar__slider-contents-stars">
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                        <svg
-                          class="similar__slider-contents-star"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
-                            fill="white"
-                            stroke="white"
-                            stroke-width="1.5"
-                          />
-                        </svg>
-                      </div>
-                      <span class="similar__slider-name">Oppenheimer</span>
-                    </div>
-                    <img
-                      src="./images/oppenheimer.jpg"
-                      alt="image"
-                      class="similar__slider-img"
-                    />
-                  </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-  
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-  
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
+
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name">WonderWoman</span>
+                  </div>
+                  <img
+                    src="./images/wonrder-woman1.jpg"
+                    alt="image"
+                    class="similar__slider-img"
+                  />
+                </div>
+
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name">John Wick</span>
+                  </div>
+                  <img
+                    src="./images/john-wick.jpg"
+                    alt="image"
+                    class="similar__slider-img"
+                  />
+                </div>
+
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name">Flash</span>
+                  </div>
+                  <img
+                    src="./images/flsh-1.jpg"
+                    alt="image"
+                    class="similar__slider-img"
+                  />
+                </div>
+
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name">Mission Impossible</span>
+                  </div>
+                  <img
+                    src="./images/mission-impossible.jpg"
+                    alt="image"
+                    class="similar__slider-img"
+                  />
+                </div>
+
+                <div class="swiper-slide similar-slide">
+                  <div class="similar__slider-contents">
+                    <span class="similar__slider-contents-category"
+                      >Fantasy</span
+                    >
+                    <div class="similar__slider-contents-stars">
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                      <svg
+                        class="similar__slider-contents-star"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+                          fill="white"
+                          stroke="white"
+                          stroke-width="1.5"
+                        />
+                      </svg>
+                    </div>
+                    <span class="similar__slider-name">Oppenheimer</span>
+                  </div>
+                  <img
+                    src="./images/oppenheimer.jpg"
+                    alt="image"
+                    class="similar__slider-img"
+                  />
+                </div>
               </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-
-      <footer class="footer">
-        <section class="footer-top">
-          <div class="footer-top__wrapper">
-            <div class="footer-top__col1">
-              <h4 class="footer-top__col1-title">FILM NAMA</h4>
-              <p class="footer-top__col1-text">
-                Filmlarga bo'lgan huquqlar ularning mualliflariga tegishli. Barcha
-                filmlar faqat ma'lumot <br />
-                uchun taqdim etiladi. Ma'muriyat foydalanuvchilar tomonidan
-                joylashtirilgan noqonuniy <br />materiallar uchun javobgar emas!
-                Har qanday film mualliflik huquqi egasining iltimosiga
-                <br />binoan olib tashlanadi
-              </p>
-            </div>
-  
-            <div class="footer-top__col2">
-              <h5 class="footer-top__col2-title">Pages</h5>
-              <ul class="footer-top__col2-list">
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link">
-                    The most watched movies
-                  </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Top Rated Movies </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Movies </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Serials </a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="footer-top__col3">
-              <h5 class="footer-top__col3-title">Our social networks</h5>
-              <ul class="footer-top__col3-list">
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-telegram"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 496 512"
-                    >
-                      <path
-                        d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"
-                      />
-                    </svg>
-                    Telegram
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-instagram"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                      />
-                    </svg>
-                    Instagram
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-facebook"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                      />
-                    </svg>
-                    Facebook
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-youtube"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-                      />
-                    </svg>
-                    YouTube
-                  </a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="footer-top__col4">
-              <h5 class="footer-top__col4-title">For reference</h5>
-              <ul class="footer-top__col4-list">
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> IMDB </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> Figma </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> Adobexd </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> WhatsApp </a>
-                </li>
-              </ul>
-            </div>
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="footer-top__wrapper">
+          <div class="footer-top__col1">
+            <h4 class="footer-top__col1-title">FILM NAMA</h4>
+            <p class="footer-top__col1-text">
+              Filmlarga bo'lgan huquqlar ularning mualliflariga tegishli. Barcha
+              filmlar faqat ma'lumot <br />
+              uchun taqdim etiladi. Ma'muriyat foydalanuvchilar tomonidan
+              joylashtirilgan noqonuniy <br />materiallar uchun javobgar emas!
+              Har qanday film mualliflik huquqi egasining iltimosiga
+              <br />binoan olib tashlanadi
+            </p>
           </div>
-        </section>
-  
-        <section class="footer-bottom">
-          <p class="footer-bottom__text">© Film Nama - 2023</p>
-        </section>
-      </footer>
 
+          <div class="footer-top__col2">
+            <h5 class="footer-top__col2-title">Pages</h5>
+            <ul class="footer-top__col2-list">
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link">
+                  The most watched movies
+                </a>
+              </li>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Top Rated Movies </a>
+              </li>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Movies </a>
+              </li>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Serials </a>
+              </li>
+            </ul>
+          </div>
 
-      <script src="./js/shared.js"></script>
-      <script src="./vendor/swiper-js/swiper-bundle.min.js"></script>
+          <div class="footer-top__col3">
+            <h5 class="footer-top__col3-title">Our social networks</h5>
+            <ul class="footer-top__col3-list">
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-telegram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"
+                    />
+                  </svg>
+                  Telegram
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-instagram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-facebook"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                    />
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-youtube"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                    />
+                  </svg>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__col4">
+            <h5 class="footer-top__col4-title">For reference</h5>
+            <ul class="footer-top__col4-list">
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> IMDB </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> Figma </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> Adobexd </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> WhatsApp </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-bottom">
+        <p class="footer-bottom__text">© Film Nama - 2023</p>
+      </section>
+    </footer>
+
+    <script src="./js/shared.js"></script>
+    <script src="./vendor/swiper-js/swiper-bundle.min.js"></script>
     <script src="./js/movie.js"></script>
     <script src="./vendor/video.js/video.min.js"></script>
-
-</body>
+  </body>
 </html>

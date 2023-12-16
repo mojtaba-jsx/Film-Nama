@@ -176,6 +176,20 @@ body{background-color: var(--woodSmoke);}
 
 }
 
+
+.film__desc-wrapper-right-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
 .video-player{
     width: 50rem;
     height: 28rem;
