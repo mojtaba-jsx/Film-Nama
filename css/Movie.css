@@ -187,7 +187,7 @@ body{background-color: var(--woodSmoke);}
 .movie__slider-image{
     width: 100%;
     height: 100%;
-    box-shadow: var(--cadmiumRed) 0px 50px 100px -20px, var(--cadmiumRed) 0px 30px 60px -30px;
+    box-shadow: var(--rangoonGreen) 0px 50px 100px -20px, var(--rangoonGreen) 0px 30px 60px -30px;
 }
 
 /** ////Image Slider Styles //// */

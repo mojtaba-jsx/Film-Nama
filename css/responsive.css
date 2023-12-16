@@ -308,6 +308,10 @@
   .contact-us__form-text {
     width: 25rem;
   }
+
+  .film__desc-wrapper-left{
+    height: 14rem;
+  }
 }
 
 /* *  /////////////////////////////////////////////////////// */
@@ -445,6 +449,10 @@
   }
   .comments__input {
     width: 74%;
+  }
+
+  .film__desc-wrapper-left{
+    height: 10rem;
   }
 }
 
