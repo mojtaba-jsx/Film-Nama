@@ -258,42 +258,19 @@
 
     <main class="main">
       <section class="film__description">
-        <div class="container">
+        <div class="container movie-desc-container">
           <div class="film__desc-wrapper">
             <div class="film__desc-wrapper-left">
               <span class="film__desc-wrapper-left-title">Fantasy</span>
-              <div class="swiper swiper-movie">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img class="movie__slider-image" src="./images/image-slider/image-slider1.jpg" alt="image">
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img class="movie__slider-image" src="./images/image-slider/image-slider2.jpg" alt="image">
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img class="movie__slider-image" src="./images/image-slider/image-slider3.jpg" alt="image">
-                  </div>
-                  
-                </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-              
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-              
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-              </div>
+              <img
+                class="film__desc-wrapper-image"
+                src="./images/poster-movie.jpg"
+                alt=""
+              />
             </div>
 
             <div class="film__desc-wrapper-right">
               <h2 class="film__desc-wrapper-right-title">Mortal Kombat</h2>
-
               <div class="film__desc-wrapper-right-box">
                 <span class="film__desc-wrapper-right-name">
                   Year
@@ -301,32 +278,33 @@
                     2020
                   </a>
                 </span>
-  
+
                 <span class="film__desc-wrapper-right-name">
                   Released
                   <a href="#" class="film__desc-wrapper-right-name-link">
                     14 Oct 1994
                   </a>
                 </span>
-  
+
                 <span class="film__desc-wrapper-right-name">
                   RunTime:
                   <a href="#" class="film__desc-wrapper-right-name-link">
                     142 Minute
                   </a>
                 </span>
-  
+
                 <span class="film__desc-wrapper-right-name">
                   Director:
                   <a href="#" class="film__desc-wrapper-right-name-link">
                     Frank Darabont
                   </a>
                 </span>
-                
+
                 <span class="film__desc-wrapper-right-name">
                   Writor:
                   <a href="#" class="film__desc-wrapper-right-name-link">
-                    Stephen King (short story \"Rita Hayworth and Shawshank Redemption\"), Frank Darabont (screenplay)
+                    Stephen King (short story \"Rita Hayworth and Shawshank
+                    Redemption\"), Frank Darabont (screenplay)
                   </a>
                 </span>
 
@@ -371,9 +349,7 @@
                     Crime - Drama
                   </a>
                 </span>
-
               </div>
-
 
               <div class="film__desc-wrapper-right-like">
                 <span class="film__desc-wrapper-right-like-btn">
@@ -458,35 +434,48 @@
             </p>
           </div>
 
-          <div class="video-player">
-            <video
-              id="my-video"
-              class="video-js vjs-theme-forest"
-              controls
-              preload="auto"
-              width="100%"
-              height="100%"
-              poster="./images/film-1.jpg"
-              data-setup="{}"
-            >
-              <source
-                src="./video/Mortal_Kombat_2021_Trailer.mkv"
-                type="video/mp4"
-              />
+          <div class="movie-slider-box">
+            <div class="swiper swiper-movie">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img
+                    class="movie__slider-image"
+                    src="./images/image-slider/image-slider1.jpg"
+                    alt="image"
+                  />
+                </div>
 
-              <p class="vjs-no-js">
-                To view this video please enable JavaScript, and consider
-                upgrading to a web browser that
-                <a
-                  href="https://videojs.com/html5-video-support/"
-                  target="_blank"
-                  >supports HTML5 video</a
-                >
-              </p>
-            </video>
+                <div class="swiper-slide">
+                  <img
+                    class="movie__slider-image"
+                    src="./images/image-slider/image-slider2.jpg"
+                    alt="image"
+                  />
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    class="movie__slider-image"
+                    src="./images/image-slider/image-slider3.jpg"
+                    alt="image"
+                  />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
           </div>
+
         </div>
-        <div></div>
       </section>
 
       <section class="comments">

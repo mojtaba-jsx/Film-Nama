@@ -41,7 +41,7 @@ body{background-color: var(--woodSmoke);}
 
 .film__desc-wrapper-left{
     width: 50%;
-    height: 24rem;
+    height: 22rem;
     margin-right: 2rem;
 }
 
@@ -183,12 +183,18 @@ body{background-color: var(--woodSmoke);}
     display: flex;
     flex-direction: column;
 }
-
-.movie__slider-image{
-    width: 100%;
+.film__desc-wrapper-image{
+    margin: 0 auto;
+    display: block;
+    width: 20rem;
     height: 100%;
-    box-shadow: var(--rangoonGreen) 0px 50px 100px -20px, var(--rangoonGreen) 0px 30px 60px -30px;
 }
+
+.film__desc-wrapper-left{
+    height: 30rem;
+}
+
+
 
 /** ////Image Slider Styles //// */
 .swiper {
@@ -209,19 +215,11 @@ body{background-color: var(--woodSmoke);}
     width: 100%;
   }
 
-/** ////Video Plauer Styles //// */
-.video-player{
+.movie-slider-box{
     width: 50rem;
     height: 28rem;
     margin: 0 auto;
     margin-bottom: 10rem;
-}
-.video-js{
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-
-    border-radius: 2rem;
 }
 
 
