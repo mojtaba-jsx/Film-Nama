@@ -186,25 +186,36 @@ body{background-color: var(--woodSmoke);}
 
 .movie__slider-image{
     width: 100%;
-    height: auto;
-    box-shadow: var(--cadmiumRed) 0px 22px 70px 4px;
+    height: 100%;
+    box-shadow: var(--cadmiumRed) 0px 50px 100px -20px, var(--cadmiumRed) 0px 30px 60px -30px;
 }
 
+/** ////Image Slider Styles //// */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
 
-
-
-
-
-
+/** ////Video Plauer Styles //// */
 .video-player{
     width: 50rem;
     height: 28rem;
     margin: 0 auto;
     margin-bottom: 10rem;
 }
-
 .video-js{
     margin: 0 auto;
     width: 100%;
@@ -212,7 +223,6 @@ body{background-color: var(--woodSmoke);}
 
     border-radius: 2rem;
 }
-
 
 
 /** ////Comments Section  Styles //// */
