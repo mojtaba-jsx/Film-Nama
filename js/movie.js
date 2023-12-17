@@ -223,6 +223,118 @@ function getMovieInfo(){
 }
 
 
+const swiperSimilarWrapper = document.querySelector('.swiperSimilarWrapper');
+
+window.addEventListener('load',getSimilarSliderInfo)
+
+
+function getSimilarSliderInfo(){
+  swiperSimilarWrapper.innerHTML='';
+  fetch('https://moviesapi.ir/api/v1/movies?page=10')
+  .then(res => res.json())
+  .then(movies =>
+    movies.data.forEach((movie)=>{
+      swiperSimilarWrapper.insertAdjacentHTML('beforeend',`
+      <div class="swiper-slide similar-slide">
+      <div class="similar__slider-contents">
+        <span class="similar__slider-contents-category"
+          >Fantasy</span
+        >
+        <div class="similar__slider-contents-stars">
+          <svg
+            class="similar__slider-contents-star"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.5"
+            />
+          </svg>
+          <svg
+            class="similar__slider-contents-star"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.5"
+            />
+          </svg>
+          <svg
+            class="similar__slider-contents-star"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.5"
+            />
+          </svg>
+          <svg
+            class="similar__slider-contents-star"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.5"
+            />
+          </svg>
+          <svg
+            class="similar__slider-contents-star"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.99992 3.61355L8.95832 6.36522L9.13362 6.86853H9.66659H12.5205L10.3105 8.62808L9.91732 8.94117L10.0574 9.42388L10.8684 12.2179L8.41976 10.5637L7.99992 10.2801L7.58008 10.5637L5.13146 12.2179L5.94242 9.42388L6.08252 8.94117L5.6893 8.62808L3.47933 6.86853H6.33325H6.86622L7.04152 6.36522L7.99992 3.61355Z"
+              fill="white"
+              stroke="white"
+              stroke-width="1.5"
+            />
+          </svg>
+        </div>
+        <span class="similar__slider-name"> ${movie.title} </span>
+      </div>
+      <img
+        src="${movie.poster}"
+        alt="image"
+        class="similar__slider-img"
+      />
+    </div>
+      
+      `)
+    })
+    )
+}
+
+
+
+
+
 
 
 const swiper = new Swiper('.swiper-movie', {
