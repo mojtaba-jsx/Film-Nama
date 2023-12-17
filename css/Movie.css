@@ -197,29 +197,21 @@ body{background-color: var(--woodSmoke);}
 
 
 /** ////Image Slider Styles //// */
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-  }
-
 .movie-slider-box{
     width: 50rem;
-    height: 28rem;
+    height: 40rem;
+    display: block;
     margin: 0 auto;
-    margin-bottom: 10rem;
+}
+
+
+.swiper-Image-slide{
+    /* width: 10rem; */
+}
+.movie__slider-image{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -353,10 +345,12 @@ body{background-color: var(--woodSmoke);}
     background-size: cover;
     background-position: center;
     background-clip:content-box;
-    width: 20rem;
-    height: 30rem;
+    width: 18rem;
+    height: 28rem;
     border-radius: 0.5rem;
 }
+
+
 
 .similar__slider-img{
     opacity: 0.7;

@@ -1,8 +1,7 @@
-
+//!  add api To movie Info Box in Movie.html
 const filmDescriptionWrapperRight = document.querySelector('.movie-desc-container');
-
+const swiperWrapperImage = document.querySelector('.swiper-wrapper-image')
 window.addEventListener('load',getMovieInfo)
-
 function getMovieInfo(){
   filmDescriptionWrapperRight.innerHTML=''
   fetch('https://moviesapi.ir/api/v1/movies/1')
@@ -181,31 +180,30 @@ function getMovieInfo(){
   <div class="movie-slider-box">
     <div class="swiper swiper-movie">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper swiper-wrapper-image">
         <!-- Slides -->
         <div class="swiper-slide">
-          <img
-            class="movie__slider-image"
-            src="${movie.images[0]}"
-            alt="image"
-          />
-        </div>
-
+        <img
+          class="movie__slider-image"
+          src="${movie.images[0]}"
+          alt="image"
+        />
+      </div>
         <div class="swiper-slide">
-          <img
-            class="movie__slider-image"
-            src="${movie.images[1]}"
-            alt="image"
-          />
-        </div>
-
+        <img
+          class="movie__slider-image"
+          src="${movie.images[1]}"
+          alt="image"
+        />
+      </div>
         <div class="swiper-slide">
-          <img
-            class="movie__slider-image"
-            src="${movie.images[2]}"
-            alt="image"
-          />
-        </div>
+        <img
+          class="movie__slider-image"
+          src="${movie.images[2]}"
+          alt="image"
+        />
+      </div>
+
       </div>
       <!-- If we need pagination -->
       <!-- <div class="swiper-pagination"></div> -->
@@ -223,11 +221,11 @@ function getMovieInfo(){
 }
 
 
+
+
+//!  add api To movie Similar Slider in Movie.html
 const swiperSimilarWrapper = document.querySelector('.swiperSimilarWrapper');
-
 window.addEventListener('load',getSimilarSliderInfo)
-
-
 function getSimilarSliderInfo(){
   swiperSimilarWrapper.innerHTML='';
   fetch('https://moviesapi.ir/api/v1/movies?page=10')
@@ -237,8 +235,7 @@ function getSimilarSliderInfo(){
       swiperSimilarWrapper.insertAdjacentHTML('beforeend',`
       <div class="swiper-slide similar-slide">
       <div class="similar__slider-contents">
-        <span class="similar__slider-contents-category"
-          >Fantasy</span
+        <span class="similar__slider-contents-category">${movie.genres}</span
         >
         <div class="similar__slider-contents-stars">
           <svg
@@ -332,55 +329,43 @@ function getSimilarSliderInfo(){
 }
 
 
-
-
-
-
-
+//!  add api To Image Slider  in Movie.html
 const swiper = new Swiper('.swiper-movie', {
-  // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  // loop: true,
   slidesPerView: '1',
-      autoplay: {
-      delay: 2000,
+  centeredSlides: true,
+  slidesPerView:'1',
+  slidesPerGroup:'3',
+    //   autoplay: {
+    //   delay: 1000,
+    // },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+
+    breakpoints: {
+      940: {
+        slidesPerView: 4,
+        spaceBetween: 320,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 300,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 200,
+      },
     },
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },   
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
 
 
-
-const swiper2 = new Swiper('.swiper-film', {
+//!  add api To Similar Movie Slider in Movie.html
+const swiper2 = new Swiper('.similar-swiper-film', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -395,61 +380,9 @@ const swiper2 = new Swiper('.swiper-film', {
     el: '.swiper-pagination',
   },
   centeredSlides: true,
-  // centeredSlidesBounds: true,
+  centeredSlidesBounds: true,
 
     breakpoints: {
-      280: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      300: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      350: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      360: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      390: {
-        slidesPerView: 1,
-        spaceBetween: 1,
-      },
-      460: {
-        slidesPerView: 2,
-        spaceBetween: 180,
-      },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 290,
-      },
-      580: {
-        slidesPerView: 2,
-        spaceBetween: 100,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 220,
-      },
-      810: {
-        slidesPerView: 3,
-        spaceBetween: 320,
-      },
-      906: {
-        slidesPerView: 3,
-        spaceBetween: 320,
-      },
       940: {
         slidesPerView: 4,
         spaceBetween: 320,
