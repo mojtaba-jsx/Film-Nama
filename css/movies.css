@@ -33,7 +33,7 @@ body{background-color: var(--woodSmoke);}
 
 .movies__list{
     margin-top: 4rem;
-    margin-bottom: 40rem;
+    margin-bottom: 4rem;
 }
 
 .movies__list-title{
@@ -103,7 +103,6 @@ body{background-color: var(--woodSmoke);}
     height:auto;
     margin: 0 auto;
     margin-top: 4rem;
-
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(23, 22, 27, 0.75);
@@ -178,4 +177,33 @@ body{background-color: var(--woodSmoke);}
 .movies__list-box-detail-btn-svg{
     width: 1.2rem;
     height: 1.2rem;
+}
+
+
+/** ////Pagination Styles //// */
+.pagination{
+    margin-bottom: 10rem;
+}
+.pagination__list{
+    background-color: var(--rangoonGreen);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    justify-content: space-around;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pagination__list-link{
+    padding: 1rem 2rem;
+    color: var(--cadmiumRed);
+    font-family: 'inter-bold', Courier, monospace;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all 120ms ease-in;
+}
+
+.pagination__list-link:hover{
+    background-color: var(--woodSmoke);
+    color: var(--white);
 }
