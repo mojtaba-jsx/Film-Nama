@@ -12,7 +12,6 @@ function getMovieInfo(){
     
     <div class="film__desc-wrapper">
     <div class="film__desc-wrapper-left">
-      <span class="film__desc-wrapper-left-title">${movie.genres}</span>
       <img
         class="film__desc-wrapper-image"
         src="${movie.poster}"
@@ -136,38 +135,7 @@ function getMovieInfo(){
         </span>
       </div>
 
-      <div class="film__desc-wrapper-right-btns">
-        <span
-          id="scroll-to-watch"
-          class="film__desc-wrapper-right-watch"
-        >
-          <a
-            id="my-link"
-            href="#my-video"
-            class="film__desc-wrapper-right-watch-link"
-          >
-            <svg
-              class="film__desc-wrapper-right-watch-svg"
-              width="11"
-              height="13"
-              viewBox="0 0 11 13"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.5 5.63398C11.1667 6.01888 11.1667 6.98113 10.5 7.36603L2.25 12.1292C1.58333 12.5141 0.75 12.0329 0.75 11.2631L0.75 1.73686C0.75 0.967059 1.58333 0.485935 2.25 0.870835L10.5 5.63398Z"
-                fill=""
-              />
-            </svg>
-            WATCH
-          </a>
-        </span>
-        <span class="film__desc-wrapper-right-download">
-          <a href="#" class="film__desc-wrapper-right-download-link">
-            Download
-          </a>
-        </span>
-      </div>
+
     </div>
   </div>
 
@@ -178,45 +146,20 @@ function getMovieInfo(){
     </p>
   </div>
 
-  <div class="movie-slider-box">
-    <div class="swiper swiper-movie">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper swiper-wrapper-image">
-        <!-- Slides -->
-        <div class="swiper-slide">
-        <img
-          class="movie__slider-image"
-          src="${movie.images[0]}"
-          alt="image"
-        />
-      </div>
-        <div class="swiper-slide">
-        <img
-          class="movie__slider-image"
-          src="${movie.images[1]}"
-          alt="image"
-        />
-      </div>
-        <div class="swiper-slide">
-        <img
-          class="movie__slider-image"
-          src="${movie.images[2]}"
-          alt="image"
-        />
+
+  <div class="movie-images">
+      <div class="movie-image">
+          <img class='movie-image-img' src="${movie.images[0]}" alt="image">
       </div>
 
+      <div class="movie-image">
+          <img class='movie-image-img' src="${movie.images[1]}" alt="image">
       </div>
-      <!-- If we need pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
 
-      <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div> -->
-
-      <!-- If we need scrollbar -->
-      <!-- <div class="swiper-scrollbar"></div> -->
-    </div>
-  </div>
+      <div class="movie-image">
+          <img class='movie-image-img' src="${movie.images[2]}" alt="image">
+      </div>
+</div>
     `)
     )
 }

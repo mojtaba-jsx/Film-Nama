@@ -312,6 +312,15 @@
   .film__desc-wrapper-left{
     height: 14rem;
   }
+
+  .film__desc-wrapper-image{
+    width: 100%;
+    height: auto;
+  }
+  .film__desc-wrapper-left{
+    margin-bottom: 8rem;
+
+  }
 }
 
 /* *  /////////////////////////////////////////////////////// */
@@ -386,6 +395,12 @@
     width: 8rem;
     padding: 1rem 2rem;
   }
+
+  .movie-image{
+    width:20rem;
+    height: 12rem;
+  }
+
 }
 
 /* *  /////////////////////////////////////////////////////// */

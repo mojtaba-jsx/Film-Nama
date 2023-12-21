@@ -196,23 +196,39 @@ body{background-color: var(--woodSmoke);}
 
 
 
-/** ////Image Slider Styles //// */
-.movie-slider-box{
-    width: 50rem;
-    height: 40rem;
-    display: block;
-    margin: 0 auto;
+/** ////Movie Images  Styles //// */
+
+.movie-images{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
-
-.swiper-Image-slide{
-    /* width: 10rem; */
+.movie-image{
+    width: 24rem;
+    height: 16rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    border-radius: 2rem;
+    box-shadow: #E50914 0px 20px 30px -10px;
 }
-.movie__slider-image{
+
+.movie-image:hover{
+    transform: scale(1.1);
+    transition: all 200ms ease-in;
+    box-shadow: #0bd95a 0px 20px 30px -10px;
+
+}
+
+.movie-image-img{
+    height: 100%;
     width: 100%;
-    background-position: center;
-    background-size: cover;
+    border-radius: 2rem;
 }
+
+
 
 
 /** ////Comments Section  Styles //// */

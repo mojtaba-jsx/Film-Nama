@@ -155,6 +155,8 @@ body{background-color: var(--woodSmoke);}
     font-family: 'inter-bold', Courier, monospace;
     margin-bottom: 2rem;
     text-shadow: 5px 3px 2px rgba(31, 25, 26, 1);
+    padding-right:1rem;
+    padding-left: 1rem;
 }
 
 .movies__list-box-detail-btn{
