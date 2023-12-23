@@ -4,7 +4,8 @@ window.addEventListener('load',getMoviesInfo);
 
 function getMoviesInfo(){
     moviesListBoxs.innerHTML='';
-    fetch('https://moviesapi.ir/api/v1/movies?page=1')
+    let movieID = localStorage.getItem("PageNumber");
+    fetch(`https://moviesapi.ir/api/v1/movies?page=${movieID}`)
     .then(res => res.json())
     .then(movies=>
         movies.data.forEach((movie)=>{
@@ -29,8 +30,38 @@ function getMoviesInfo(){
 }
 
 let moviesListBoxDetailBtns = document.querySelectorAll('.movies__list-box-detail-btn')
-console.log(moviesListBoxDetailBtns);
 function setIdToStorage(id){
-  console.log(id);
   localStorage.setItem("id", id);
 }
+
+
+
+
+
+
+// data.metadata.page_count
+
+
+const paginationList = document.querySelector('.pagination__list')
+// let currentPage = 1
+// let rowsCount = 10
+
+let pageCount = 25
+for (let index = 1; index <= pageCount; index++) {
+  paginationList.insertAdjacentHTML('beforeend',`
+  <li class="pagination__list-item">
+  <a href="./movies.html" class="pagination__list-link">
+   ${index}
+  </a>
+</li>
+  `)
+}
+
+const paginationListItems = document.querySelectorAll('.pagination__list-item')
+// console.log(paginationListItems);
+paginationListItems.forEach((listItem)=>{
+  listItem.addEventListener('click',(event)=>{
+    let pageNumber = event.target.innerHTML
+    localStorage.setItem("PageNumber", pageNumber);    
+  })
+})
