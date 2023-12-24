@@ -38,13 +38,7 @@ function setIdToStorage(id){
 
 
 
-
-// data.metadata.page_count
-
-
 const paginationList = document.querySelector('.pagination__list')
-// let currentPage = 1
-// let rowsCount = 10
 
 let pageCount = 25
 for (let index = 1; index <= pageCount; index++) {
@@ -65,3 +59,75 @@ paginationListItems.forEach((listItem)=>{
     localStorage.setItem("PageNumber", pageNumber);    
   })
 })
+
+
+
+
+
+// const moviesListGenersItem = document.querySelectorAll('.movies__list-geners-item')
+
+// moviesListGenersItem.forEach((genreItem)=>{
+//   genreItem.addEventListener('click',(event)=>{
+//     let genre = event.target.innerHTML;
+//     console.log(genre);
+//     localStorage.setItem("Genre", genre);   
+//   })
+// })
+
+
+const moviesListGenersList = document.querySelector('.movies__list-geners-list')
+
+window.addEventListener('load',getMovieGenres)
+function getMovieGenres(){
+  fetch('https://moviesapi.ir/api/v1/genres')
+  .then(res => res.json())
+  .then(datas=>
+    datas.forEach((data)=>{
+      moviesListGenersList.insertAdjacentHTML('beforeend',`
+      <li class="movies__list-geners-item">
+      <a href="#" onclick="getMoviesByGenre(${data.id})" class="movies__list-geners-link" > ${data.name} </a>
+      </li>
+      `)
+    })
+
+    )
+}
+
+const moviesListTitle = document.querySelector('.movies__list-title');
+
+
+function getMoviesByGenre(id){
+
+  localStorage.setItem('MovieGenreId',id)
+  moviesListBoxs.innerHTML='';
+  fetch(`https://moviesapi.ir/api/v1/genres/${id}/movies?page=1`)
+  .then(res=> res.json())
+  .then(movies => 
+      movies.data.forEach((movie)=>{
+        moviesListTitle.innerHTML = movie.genres[0]
+        moviesListBoxs.insertAdjacentHTML('beforeend',`
+        <div class="movies__list-box">
+        <img src="${movie.poster}" alt="movie" class="movies__list-box-img">
+        <div class="movies__list-box-detail">
+          <h4 class="movies__list-box-detail-name">
+            ${movie.title}
+          </h4>
+        </div>
+        <a href="./movie.html" class="movies__list-box-detail-btn" onclick="setIdToStorage(${movie.id})">
+        <svg class="movies__list-box-detail-btn-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        </svg>                            
+        Watch
+      </a>
+      </div>
+        
+        `)
+      })
+    
+    )
+}
+
+
+
+
+
