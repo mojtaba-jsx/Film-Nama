@@ -1,500 +1,464 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/Movies.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Movies.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Movies</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="header">
+      <div class="container">
+        <!--^ ---------------------Start NavBar------------------ -->
+        <nav class="navbar">
+          <h2 class="navbar__logo">FILM NAMA</h2>
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a href="./Home.html" class="navbar__list-link"> Home </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Movies.html" class="navbar__list-link"> Movies </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Movie.html" class="navbar__list-link"> Movie </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Contact-Us.html" class="navbar__list-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a href="./Questions.html" class="navbar__list-link">
+                Questions
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__icons">
+            <span class="navabr__search-icon">
+              <svg
+                class="navabr__search-icon-svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
+                />
+              </svg>
+            </span>
+            <span class="navbar__bell-icon">
+              <svg
+                class="navbar__bell-icon-svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span class="navbar__lang-icon">
+              <svg
+                class="navbar__lang-icon-svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
+                />
+              </svg>
+              ENG
+              <svg
+                class="navbar__lang-icon-arrow"
+                width="12"
+                height="6"
+                viewBox="0 0 12 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 1L6 5L10.5 1"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </span>
+            <div class="language__list">
+              <span class="language__list-item">ENG</span>
+              <span class="language__list-item">FA</span>
+            </div>
+          </div>
+          <svg
+            class="mobile-menu__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </nav>
+        <!--^ ---------------------End NavBar------------------ -->
+      </div>
+    </header>
+
+    <section class="mobile-menu">
+      <!-- <h2 class="mobile-menu__logo">FILM NAMA</h2> -->
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__list-item">
+          <svg
+            class="mobile-menu__list-polygon"
+            width="9"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
+              fill="#E50914"
+            />
+          </svg>
+          <a href="./Home.html" class="mobile-menu__list-link"> Home </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Movies.html" class="mobile-menu__list-link"> Movies </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Contact-Us.html" class="mobile-menu__list-link">
+            Contact Us
+          </a>
+        </li>
+        <li class="mobile-menu__list-item">
+          <a href="./Questions.html" class="mobile-menu__list-link">
+            Questions
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__icons">
+        <span class="mobile-menu__search-icon">
+          <svg
+            class="mobile-menu__search-icon-svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
+            />
+          </svg>
+        </span>
+        <input
+          class="mobile-menu__searchbox"
+          type="text"
+          placeholder="Search The Movie"
+        />
+        <button class="mobile-menu__searchbox-btn">Search</button>
+        <span class="mobile-menu__bell-icon">
+          <svg
+            class="mobile-menu__bell-icon-svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__notif-modal">
+          <span class="mobile-menu__notif-modal-title"
+            >Notification Box is Empty</span
+          >
+        </div>
+
+        <span class="mobile-menu__lang-icon">
+          <svg
+            class="mobile-menu__lang-icon-svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
+            />
+          </svg>
+          ENG
+          <svg
+            class="navbar__lang-icon-arrow"
+            width="12"
+            height="6"
+            viewBox="0 0 12 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.5 1L6 5L10.5 1"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+            />
+          </svg>
+        </span>
+        <div class="mobile-menu__lang-list">
+          <span class="mobile-menu__lang-list-item">ENG</span>
+          <span class="mobile-menu__lang-list-item">FA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-modal">
+      <h2 class="search-modal__title">Search Your Movie</h2>
+      <input
+        placeholder="Enter Movie Name ..."
+        class="search-modal__input"
+        type="text"
+      />
+      <button class="search-modal__btn">Search</button>
+    </section>
+
+    <section class="notif-box">
+      <div class="notif-modal">
+        <span class="notif-modal__title">Notification Box is Empty</span>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="movies__list">
         <div class="container">
-          <!--^ ---------------------Start NavBar------------------ -->
-          <nav class="navbar">
-            <h2 class="navbar__logo">FILM NAMA</h2>
-            <ul class="navbar__list">
-              <li class="navbar__list-item">
-                <a href="./Home.html" class="navbar__list-link"> Home </a>
+          <div class="movies__list-wrapper">
+            <h2 class="movies__list-title">Action</h2>
+            <div class="movies__list-geners">
+              <ul class="movies__list-geners-list">
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Action </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Crime </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Drama </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Biography </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> History </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Adventure </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Fantasy </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Western </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Comedy </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Sci-Fi </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Mystery </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Thriller </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Family </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Romance </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> War </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Animation </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Horror </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Musical </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Sport </a>
+                </li>
+                <li class="movies__list-geners-item">
+                  <a href="#" class="movies__list-geners-link"> Film-Noir </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="movies__list-boxs">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pagination">
+        <div class="container">
+          <div class="pagination__wrapper">
+            <ul class="pagination__list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="footer-top__wrapper">
+          <div class="footer-top__col1">
+            <h4 class="footer-top__col1-title">FILM NAMA</h4>
+            <p class="footer-top__col1-text">
+              Filmlarga bo'lgan huquqlar ularning mualliflariga tegishli. Barcha
+              filmlar faqat ma'lumot <br />
+              uchun taqdim etiladi. Ma'muriyat foydalanuvchilar tomonidan
+              joylashtirilgan noqonuniy <br />materiallar uchun javobgar emas!
+              Har qanday film mualliflik huquqi egasining iltimosiga
+              <br />binoan olib tashlanadi
+            </p>
+          </div>
+
+          <div class="footer-top__col2">
+            <h5 class="footer-top__col2-title">Pages</h5>
+            <ul class="footer-top__col2-list">
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link">
+                  The most watched movies
+                </a>
               </li>
-              <li class="navbar__list-item">
-                <a href="./Movies.html" class="navbar__list-link"> Movies </a>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Top Rated Movies </a>
               </li>
-              <li class="navbar__list-item">
-                <a href="./Movie.html" class="navbar__list-link"> Movie </a>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Movies </a>
               </li>
-              <li class="navbar__list-item">
-                <a href="./Contact-Us.html" class="navbar__list-link"> Contact Us </a>
-              </li>
-              <li class="navbar__list-item">
-                <a href="./Questions.html" class="navbar__list-link"> Questions </a>
+              <li class="footer-top__col2-item">
+                <a href="#" class="footer-top__col2-link"> Serials </a>
               </li>
             </ul>
-            <div class="navbar__icons">
-              <span class="navabr__search-icon">
-                <svg
-                  class="navabr__search-icon-svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
-                  />
-                </svg>
-              </span>
-              <span class="navbar__bell-icon">
-                <svg
-                  class="navbar__bell-icon-svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  stroke="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <span class="navbar__lang-icon">
-                <svg
-                  class="navbar__lang-icon-svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
-                  />
-                </svg>
-                ENG
-                <svg
-                  class="navbar__lang-icon-arrow"
-                  width="12"
-                  height="6"
-                  viewBox="0 0 12 6"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1.5 1L6 5L10.5 1"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <div class="language__list">
-                <span class="language__list-item">ENG</span>
-                <span class="language__list-item">FA</span>
-              </div>
-            </div>
-            <svg
-              class="mobile-menu__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              height="1em"
-              viewBox="0 0 448 512"
-            >
-              <path
-                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-              />
-            </svg>
-          </nav>
-          <!--^ ---------------------End NavBar------------------ -->
-        </div>
-      </header>
-  
-      <section class="mobile-menu">
-        <!-- <h2 class="mobile-menu__logo">FILM NAMA</h2> -->
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__list-item">
-            <svg
-              class="mobile-menu__list-polygon"
-              width="9"
-              height="14"
-              viewBox="0 0 9 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.48532 6.6038C8.74532 6.80395 8.74532 7.19605 8.48532 7.3962L0.804997 13.3085C0.476212 13.5616 0 13.3272 0 12.9123V1.08769C0 0.672767 0.476213 0.438386 0.804997 0.691484L8.48532 6.6038Z"
-                fill="#E50914"
-              />
-            </svg>
-            <a href="./Home.html" class="mobile-menu__list-link"> Home </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Movies.html" class="mobile-menu__list-link"> Movies </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Contact-Us.html" class="mobile-menu__list-link"> Contact Us </a>
-          </li>
-          <li class="mobile-menu__list-item">
-            <a href="./Questions.html" class="mobile-menu__list-link"> Questions </a>
-          </li>
-        </ul>
-        <div class="mobile-menu__icons">
-          <span class="mobile-menu__search-icon">
-            <svg
-              class="mobile-menu__search-icon-svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13.1988 11.6083H12.3648L12.0691 11.3234C12.7289 10.5574 13.2112 9.65499 13.4813 8.6809C13.7514 7.70682 13.8028 6.6851 13.6317 5.68886C13.1355 2.7555 10.6861 0.413034 7.72986 0.0542773C6.69056 -0.0771269 5.63496 0.0308227 4.64383 0.369866C3.6527 0.708908 2.75231 1.27006 2.01155 2.01038C1.2708 2.75069 0.709324 3.65056 0.370083 4.64111C0.0308408 5.63166 -0.0771721 6.68664 0.0543092 7.72533C0.413276 10.6798 2.75712 13.1278 5.6922 13.6237C6.68902 13.7947 7.71134 13.7434 8.68599 13.4734C9.66065 13.2034 10.5635 12.7215 11.3301 12.0621L11.6151 12.3575V13.1911L16.1022 17.6755C16.5351 18.1082 17.2425 18.1082 17.6753 17.6755C18.1082 17.2429 18.1082 16.536 17.6753 16.1033L13.1988 11.6083ZM6.86412 11.6083C4.23521 11.6083 2.11309 9.48745 2.11309 6.86009C2.11309 4.23273 4.23521 2.11185 6.86412 2.11185C9.49302 2.11185 11.6151 4.23273 11.6151 6.86009C11.6151 9.48745 9.49302 11.6083 6.86412 11.6083Z"
-              />
-            </svg>
-          </span>
-          <input
-            class="mobile-menu__searchbox"
-            type="text"
-            placeholder="Search The Movie"
-          />
-          <button class="mobile-menu__searchbox-btn">Search</button>
-          <span class="mobile-menu__bell-icon">
-            <svg
-              class="mobile-menu__bell-icon-svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.557 18.103C11.3988 18.3758 11.1717 18.6023 10.8984 18.7597C10.6251 18.9171 10.3153 19 10 19C9.68466 19 9.37485 18.9171 9.1016 18.7597C8.82834 18.6023 8.60123 18.3758 8.443 18.103M1 6.40096C1 4.42061 1.63 2.53027 2.8 1M19 6.40096C19 4.45328 18.3684 2.55814 17.2 1M15.4 6.40096C15.4 4.96853 14.8311 3.59478 13.8184 2.5819C12.8057 1.56903 11.4322 1 10 1C8.56783 1 7.19432 1.56903 6.18162 2.5819C5.16893 3.59478 4.6 4.96853 4.6 6.40096C4.6 12.7021 1.9 14.5024 1.9 14.5024H18.1C18.1 14.5024 15.4 12.7021 15.4 6.40096Z"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </span>
-          <div class="mobile-menu__notif-modal">
-            <span class="mobile-menu__notif-modal-title"
-              >Notification Box is Empty</span
-            >
           </div>
-  
-          <span class="mobile-menu__lang-icon">
-            <svg
-              class="mobile-menu__lang-icon-svg"
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="white"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10 20C8.63333 20 7.34167 19.7373 6.125 19.212C4.90833 18.6873 3.846 17.9707 2.938 17.062C2.02933 16.154 1.31267 15.0917 0.788 13.875C0.262667 12.6583 0 11.3667 0 10C0 8.61667 0.262667 7.321 0.788 6.113C1.31267 4.90433 2.02933 3.846 2.938 2.938C3.846 2.02933 4.90833 1.31233 6.125 0.787C7.34167 0.262333 8.63333 0 10 0C11.3833 0 12.679 0.262333 13.887 0.787C15.0957 1.31233 16.154 2.02933 17.062 2.938C17.9707 3.846 18.6873 4.90433 19.212 6.113C19.7373 7.321 20 8.61667 20 10C20 11.3667 19.7373 12.6583 19.212 13.875C18.6873 15.0917 17.9707 16.154 17.062 17.062C16.154 17.9707 15.0957 18.6873 13.887 19.212C12.679 19.7373 11.3833 20 10 20ZM10 17.95C10.4333 17.35 10.8083 16.725 11.125 16.075C11.4417 15.425 11.7 14.7333 11.9 14H8.1C8.3 14.7333 8.55833 15.425 8.875 16.075C9.19167 16.725 9.56667 17.35 10 17.95ZM7.4 17.55C7.1 17 6.83767 16.429 6.613 15.837C6.38767 15.2457 6.2 14.6333 6.05 14H3.1C3.58333 14.8333 4.18733 15.5583 4.912 16.175C5.63733 16.7917 6.46667 17.25 7.4 17.55ZM12.6 17.55C13.5333 17.25 14.3623 16.7917 15.087 16.175C15.8123 15.5583 16.4167 14.8333 16.9 14H13.95C13.8 14.6333 13.6127 15.2457 13.388 15.837C13.1627 16.429 12.9 17 12.6 17.55ZM2.25 12H5.65C5.6 11.6667 5.56233 11.3373 5.537 11.012C5.51233 10.6873 5.5 10.35 5.5 10C5.5 9.65 5.51233 9.31267 5.537 8.988C5.56233 8.66267 5.6 8.33333 5.65 8H2.25C2.16667 8.33333 2.104 8.66267 2.062 8.988C2.02067 9.31267 2 9.65 2 10C2 10.35 2.02067 10.6873 2.062 11.012C2.104 11.3373 2.16667 11.6667 2.25 12ZM7.65 12H12.35C12.4 11.6667 12.4377 11.3373 12.463 11.012C12.4877 10.6873 12.5 10.35 12.5 10C12.5 9.65 12.4877 9.31267 12.463 8.988C12.4377 8.66267 12.4 8.33333 12.35 8H7.65C7.6 8.33333 7.56267 8.66267 7.538 8.988C7.51267 9.31267 7.5 9.65 7.5 10C7.5 10.35 7.51267 10.6873 7.538 11.012C7.56267 11.3373 7.6 11.6667 7.65 12ZM14.35 12H17.75C17.8333 11.6667 17.896 11.3373 17.938 11.012C17.9793 10.6873 18 10.35 18 10C18 9.65 17.9793 9.31267 17.938 8.988C17.896 8.66267 17.8333 8.33333 17.75 8H14.35C14.4 8.33333 14.4373 8.66267 14.462 8.988C14.4873 9.31267 14.5 9.65 14.5 10C14.5 10.35 14.4873 10.6873 14.462 11.012C14.4373 11.3373 14.4 11.6667 14.35 12ZM13.95 6H16.9C16.4167 5.16667 15.8123 4.44167 15.087 3.825C14.3623 3.20833 13.5333 2.75 12.6 2.45C12.9 3 13.1627 3.57067 13.388 4.162C13.6127 4.754 13.8 5.36667 13.95 6ZM8.1 6H11.9C11.7 5.26667 11.4417 4.575 11.125 3.925C10.8083 3.275 10.4333 2.65 10 2.05C9.56667 2.65 9.19167 3.275 8.875 3.925C8.55833 4.575 8.3 5.26667 8.1 6ZM3.1 6H6.05C6.2 5.36667 6.38767 4.754 6.613 4.162C6.83767 3.57067 7.1 3 7.4 2.45C6.46667 2.75 5.63733 3.20833 4.912 3.825C4.18733 4.44167 3.58333 5.16667 3.1 6Z"
-              />
-            </svg>
-            ENG
-            <svg
-              class="navbar__lang-icon-arrow"
-              width="12"
-              height="6"
-              viewBox="0 0 12 6"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1L6 5L10.5 1"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-            </svg>
-          </span>
-          <div class="mobile-menu__lang-list">
-            <span class="mobile-menu__lang-list-item">ENG</span>
-            <span class="mobile-menu__lang-list-item">FA</span>
+
+          <div class="footer-top__col3">
+            <h5 class="footer-top__col3-title">Our social networks</h5>
+            <ul class="footer-top__col3-list">
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-telegram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"
+                    />
+                  </svg>
+                  Telegram
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-instagram"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    />
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-facebook"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                    />
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li class="footer-top__col3-item">
+                <a href="#" class="footer-top__col3-link">
+                  <svg
+                    class="footer-top__col3-youtube"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 576 512"
+                  >
+                    <path
+                      d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                    />
+                  </svg>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-top__col4">
+            <h5 class="footer-top__col4-title">For reference</h5>
+            <ul class="footer-top__col4-list">
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> IMDB </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> Figma </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> Adobexd </a>
+              </li>
+              <li class="footer-top__col4-item">
+                <a href="#" class="footer-top__col4-link"> WhatsApp </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-  
-      <section class="search-modal">
-  
-        <h2 class="search-modal__title">Search Your Movie</h2>
-        <input
-          placeholder="Enter Movie Name ..."
-          class="search-modal__input"
-          type="text"
-        />
-        <button class="search-modal__btn">Search</button>
+
+      <section class="footer-bottom">
+        <p class="footer-bottom__text">© Film Nama - 2023</p>
       </section>
-  
-      <section class="notif-box">
-        <div class="notif-modal">
-          <span class="notif-modal__title">Notification Box is Empty</span>
-        </div>
-      </section>
+    </footer>
 
-      <main class="main">
-        <section class="movies__list">
-            <div class="container">
-                <div class="movies__list-wrapper">
-                    <h2 class="movies__list-title">Action</h2>
-                    <div class="movies__list-geners">
-                        <ul class="movies__list-geners-list">
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Action
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Crime
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Drama
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Biography
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    History
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Adventure
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Fantasy
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Western
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Comedy
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Sci-Fi
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Mystery
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Thriller
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Family
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Romance
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    War
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Animation
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Horror
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Musical
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Sport
-                                </a>
-                            </li>
-                            <li class="movies__list-geners-item">
-                                <a href="#" class="movies__list-geners-link">
-                                    Film-Noir
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="movies__list-boxs" >
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="pagination">
-          <div class="container">
-            <div class="pagination__wrapper">
-              <ul class="pagination__list">
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <section class="footer-top">
-          <div class="footer-top__wrapper">
-            <div class="footer-top__col1">
-              <h4 class="footer-top__col1-title">FILM NAMA</h4>
-              <p class="footer-top__col1-text">
-                Filmlarga bo'lgan huquqlar ularning mualliflariga tegishli. Barcha
-                filmlar faqat ma'lumot <br />
-                uchun taqdim etiladi. Ma'muriyat foydalanuvchilar tomonidan
-                joylashtirilgan noqonuniy <br />materiallar uchun javobgar emas!
-                Har qanday film mualliflik huquqi egasining iltimosiga
-                <br />binoan olib tashlanadi
-              </p>
-            </div>
-  
-            <div class="footer-top__col2">
-              <h5 class="footer-top__col2-title">Pages</h5>
-              <ul class="footer-top__col2-list">
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link">
-                    The most watched movies
-                  </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Top Rated Movies </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Movies </a>
-                </li>
-                <li class="footer-top__col2-item">
-                  <a href="#" class="footer-top__col2-link"> Serials </a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="footer-top__col3">
-              <h5 class="footer-top__col3-title">Our social networks</h5>
-              <ul class="footer-top__col3-list">
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-telegram"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 496 512"
-                    >
-                      <path
-                        d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"
-                      />
-                    </svg>
-                    Telegram
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-instagram"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 448 512"
-                    >
-                      <path
-                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                      />
-                    </svg>
-                    Instagram
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-facebook"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 512 512"
-                    >
-                      <path
-                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                      />
-                    </svg>
-                    Facebook
-                  </a>
-                </li>
-                <li class="footer-top__col3-item">
-                  <a href="#" class="footer-top__col3-link">
-                    <svg
-                      class="footer-top__col3-youtube"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="1em"
-                      viewBox="0 0 576 512"
-                    >
-                      <path
-                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
-                      />
-                    </svg>
-                    YouTube
-                  </a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="footer-top__col4">
-              <h5 class="footer-top__col4-title">For reference</h5>
-              <ul class="footer-top__col4-list">
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> IMDB </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> Figma </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> Adobexd </a>
-                </li>
-                <li class="footer-top__col4-item">
-                  <a href="#" class="footer-top__col4-link"> WhatsApp </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-  
-        <section class="footer-bottom">
-          <p class="footer-bottom__text">© Film Nama - 2023</p>
-        </section>
-      </footer>
-
-
-      <script src="./js/movies.js"></script>
-      <script src="./js/shared.js"></script>
-</body>
+    <script src="./js/movies.js"></script>
+    <script src="./js/shared.js"></script>
+  </body>
 </html>
