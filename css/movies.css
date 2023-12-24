@@ -110,7 +110,7 @@ body{background-color: var(--woodSmoke);}
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .movies__list-box{
-    width: 14rem;
+    width: 16rem;
     height: 25rem;
     border-radius: 1rem;
     transition: all 200ms ease-in;
@@ -121,16 +121,17 @@ body{background-color: var(--woodSmoke);}
     margin-bottom: 4rem;
 }
 
+
 .movies__list-box:hover{
-    box-shadow: #A6FF96 0px 14px 28px, #A6FF96 0px 10px 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: scale(1.1);
 }
 
 .movies__list-box-img{
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .movies__list-box-img{
@@ -162,14 +163,20 @@ body{background-color: var(--woodSmoke);}
     display: flex;
     align-items: center;
     background-color: red;
-    padding: 0.5rem 2rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    padding: 0.8rem 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     color: var(--white);
+    opacity: 0.5;
     font-family: 'inter-regular', Courier, monospace;
-    width: 4rem;
+    max-width: 100%;
     transition: all 100ms ease-in;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+.movies__list-box-detail-btn:hover{
+    opacity: 1;
+    transition: all 200ms ease-in;
 }
 
 
@@ -177,6 +184,7 @@ body{background-color: var(--woodSmoke);}
 .movies__list-box-detail-btn-svg{
     width: 1.2rem;
     height: 1.2rem;
+    text-align: center;
 }
 
 
