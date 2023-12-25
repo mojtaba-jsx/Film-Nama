@@ -33,11 +33,12 @@ const swiper2 = new Swiper(".swiper-container-2", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-  slidesPerView: "4",
+  slidesPerView: 4,
   centeredSlides: true,
-  //   autoplay: {
-  //   delay: 2000,
-  // },
+
+    autoplay: {
+    delay: 2000,
+  },
 
   // If we need pagination
   pagination: {
@@ -322,14 +323,13 @@ function getRecomendedMoviesInfo() {
     .then((res) => res.json())
     .then((movies) =>
       movies.data.forEach((movie) => {
-        console.log(movie);
         swiperWrapperSlider2.insertAdjacentHTML(
           "beforeend",
           `
           <div class="swiper-slide recommend-slide">
           <div class="recommend__slider-contents">
             <span class="recommend__slider-contents-category"
-              >Fantasy</span
+              >${movie.genres[0]}</span
             >
             <div class="recommend__slider-contents-stars">
               <svg
@@ -532,3 +532,16 @@ function getPopularMoviesInfo() {
       })
     );
 }
+
+
+
+//!  Logic For Category Movie 
+
+const genreBoxLinks = document.querySelectorAll('.genre__box-link')
+genreBoxLinks.forEach((genreBoxLink)=>{
+  genreBoxLink.addEventListener('click',()=>{
+    genreBoxLink.href = './movies.html'
+    localStorage.setItem('genreBoxId',genreBoxLink.id);
+    
+  })
+})

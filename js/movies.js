@@ -5,7 +5,8 @@ window.addEventListener('load',getMoviesInfo);
 function getMoviesInfo(){
     moviesListBoxs.innerHTML='';
     let movieID = localStorage.getItem("PageNumber");
-    fetch(`https://moviesapi.ir/api/v1/movies?page=${movieID}`)
+    let movieGenreId = localStorage.getItem('genreBoxId')
+    fetch(`https://moviesapi.ir/api/v1/genres/${movieGenreId}/movies?page=${movieID}`)
     .then(res => res.json())
     .then(movies=>
         movies.data.forEach((movie)=>{

@@ -192,18 +192,26 @@ body {
   text-shadow: 3px 2px 0px var(--cadmiumRed);
 }
 
+
+
+
 .recommend__title svg {
   width: 1.6rem;
   height: 1.6rem;
 }
+
+.swiper-slide{
+
+}
+
 
 .recommend__slider-img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-clip: content-box;
-  width: 20rem;
-  height: 30rem;
+  width: 16rem;
+  height: 28rem;
   border-radius: 0.5rem;
 }
 
@@ -288,7 +296,7 @@ body {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
-  width: 20rem;
+  max-width: 20rem;
   height: 30rem;
   border-radius: 0.5rem;
 }
@@ -393,6 +401,7 @@ body {
   position: absolute;
   left: 2rem;
   top: 6rem;
+  width: 10rem;
 }
 
 .genre__box-title {
@@ -400,6 +409,7 @@ body {
   font-family: "inter-bold", Courier, monospace;
   font-size: 2rem;
   margin-bottom: 1rem;
+  width: 8rem;
 }
 
 .genre__box-text {
