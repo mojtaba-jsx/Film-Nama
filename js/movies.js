@@ -64,15 +64,7 @@ paginationListItems.forEach((listItem)=>{
 
 
 
-// const moviesListGenersItem = document.querySelectorAll('.movies__list-geners-item')
 
-// moviesListGenersItem.forEach((genreItem)=>{
-//   genreItem.addEventListener('click',(event)=>{
-//     let genre = event.target.innerHTML;
-//     console.log(genre);
-//     localStorage.setItem("Genre", genre);   
-//   })
-// })
 
 
 const moviesListGenersList = document.querySelector('.movies__list-geners-list')
