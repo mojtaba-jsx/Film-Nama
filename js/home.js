@@ -224,19 +224,27 @@ const swiper3 = new Swiper(".swiper-container-3", {
 });
 
 //!  Sweet Alert 2 Logic
-// Swal.fire({
-//   title: 'توجه',
-//   text: 'این قالب با HTML CSS  و کمی JS و کتابخانه های Swiper Js , Sweet Alert2 , Video Js در 5 صفحه به صورت ریسپانسیو توسعه داده شده است',
-//   icon: 'info',
-//   animation:true,
-//   backdrop:true,
-//   iconColor:'#e50914',
-//   textDirection: "rtl",
-//   background:'#0d0c11',
-//   confirmButtonText: 'متوجه شدم',
-//   confirmButtonColor:'#e50914',
-//   focusConfirm:true,
-// })
+document.addEventListener('DOMContentLoaded', function() {
+  if (!sessionStorage.getItem('alertShown1')) {
+    Swal.fire({
+      title: 'توجه',
+      text:'این قالب با CSS , HTML و JS  به صورت ریسپانسیو در پنج صفحه توسعه داده شده است و از کتابخانه های Swiper Js  و Sweet Alert 2  استفاده شده است  و در این صفحه اطلاعات اسلایدرها از Api گرفته می شود  و در بخش Category با کلیک بر روی هر ژانر به صفحه ی فیلم های مربوط به آن منتقل می شوید .',
+      icon: 'info',
+      animation:true,
+      backdrop:true,
+      iconColor:'#e50914',
+      textDirection: "rtl",
+      background:'#0d0c11',
+      confirmButtonText: 'متوجه شدم',
+      confirmButtonColor:'#e50914',
+      focusConfirm:true,
+    })
+      sessionStorage.setItem('alertShown1', 'true');
+  }
+});
+
+
+
 
 //!  Get From Api Movies Info For landing Slider
 const swiperWrapperSlider1 = document.querySelector(".swiperWrapperSlides1");

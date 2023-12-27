@@ -59,14 +59,7 @@ paginationListItems.forEach((listItem)=>{
 })
 
 
-
-
-
-
-
-
 const moviesListGenersList = document.querySelector('.movies__list-geners-list')
-
 window.addEventListener('load',getMovieGenres)
 function getMovieGenres(){
   fetch('https://moviesapi.ir/api/v1/genres')
@@ -84,8 +77,6 @@ function getMovieGenres(){
 }
 
 const moviesListTitle = document.querySelector('.movies__list-title');
-
-
 function getMoviesByGenre(id){
 
   localStorage.setItem('MovieGenreId',id)
@@ -119,5 +110,23 @@ function getMoviesByGenre(id){
 
 
 
+//!  Sweet Alert 2 Logic
+document.addEventListener('DOMContentLoaded', function() {
+  if (!sessionStorage.getItem('alertShown3')) {
+    Swal.fire({
+      title: 'توجه',
+      text:'در این صفحه اطلاعات فیلم ها از api گرفته می شود و با کلیک بر روی هر ژانر فیلم های مربوط آن نمایش داده می شود و با کلیک بر روی هر فیلم به صفحه ی توضیحات آن منتقل می شوید ',
+      icon: 'info',
+      animation:true,
+      backdrop:true,
+      iconColor:'#e50914',
+      textDirection: "rtl",
+      background:'#0d0c11',
+      confirmButtonText: 'متوجه شدم',
+      confirmButtonColor:'#e50914',
+      focusConfirm:true,
+    })
 
-
+      sessionStorage.setItem('alertShown3', 'true');
+  }
+});
