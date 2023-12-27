@@ -1,7 +1,7 @@
+
+//! Get Movie Info With Api for Movies.js
 const moviesListBoxs = document.querySelector('.movies__list-boxs');
-
 window.addEventListener('load',getMoviesInfo);
-
 function getMoviesInfo(){
     moviesListBoxs.innerHTML='';
     let movieID = localStorage.getItem("PageNumber");
@@ -36,11 +36,8 @@ function setIdToStorage(id){
 }
 
 
-
-
-
+//! Create Btns For Pagination
 const paginationList = document.querySelector('.pagination__list')
-
 let pageCount = 25
 for (let index = 1; index <= pageCount; index++) {
   paginationList.insertAdjacentHTML('beforeend',`
@@ -52,8 +49,8 @@ for (let index = 1; index <= pageCount; index++) {
   `)
 }
 
+//! Get Page Number With set Event On Btns
 const paginationListItems = document.querySelectorAll('.pagination__list-item')
-// console.log(paginationListItems);
 paginationListItems.forEach((listItem)=>{
   listItem.addEventListener('click',(event)=>{
     let pageNumber = event.target.innerHTML

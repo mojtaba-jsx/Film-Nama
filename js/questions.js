@@ -1,3 +1,4 @@
+//! Logic For Show And Hide Accordion Menu in Questions
 let acc = document.getElementsByClassName("accordion");
 let i;
 

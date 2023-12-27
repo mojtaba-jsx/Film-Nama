@@ -1,4 +1,4 @@
-/* !Imports */
+/*! Import Css Modules */
 @import "./navbar.css";
 @import "./search-modal.css";
 @import "./notif-box.css";
@@ -192,18 +192,10 @@ body {
   text-shadow: 3px 2px 0px var(--cadmiumRed);
 }
 
-
-
-
 .recommend__title svg {
   width: 1.6rem;
   height: 1.6rem;
 }
-
-.swiper-slide{
-
-}
-
 
 .recommend__slider-img {
   background-repeat: no-repeat;
@@ -449,6 +441,7 @@ body {
 }
 
 
+/*! Swal Library Css */
 .swal2-modal {
   direction: rtl;
   font-family: "poppins-bold", Courier, monospace;

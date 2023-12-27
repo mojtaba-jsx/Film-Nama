@@ -165,8 +165,6 @@ function getMovieInfo(){
 }
 
 
-
-
 //!  add api To movie Similar Slider in Movie.html
 const swiperSimilarWrapper = document.querySelector('.swiperSimilarWrapper');
 window.addEventListener('load',getSimilarSliderInfo)
@@ -274,42 +272,7 @@ function getSimilarSliderInfo(){
 }
 
 
-//!  add api To Image Slider  in Movie.html
-const swiper = new Swiper('.swiper-movie', {
-  direction: 'horizontal',
-  // loop: true,
-  slidesPerView: '1',
-  centeredSlides: true,
-  slidesPerView:'1',
-  slidesPerGroup:'3',
-    //   autoplay: {
-    //   delay: 1000,
-    // },
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-
-    breakpoints: {
-      940: {
-        slidesPerView: 4,
-        spaceBetween: 320,
-      },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 300,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 200,
-      },
-    },
-});
-
-
-//!  add api To Similar Movie Slider in Movie.html
+//!   Similar Movie Slider in Movie.html
 const swiper2 = new Swiper('.similar-swiper-film', {
   // Optional parameters
   direction: 'horizontal',

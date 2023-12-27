@@ -426,7 +426,6 @@ function getRecomendedMoviesInfo() {
 //!  Get From Api Movies Info For Popular Slider
 const swiperWrapperSlider3 = document.querySelector(".swiperWrapperSlides3");
 window.addEventListener("load", getPopularMoviesInfo);
-
 function getPopularMoviesInfo() {
   swiperWrapperSlider2.innerHTML = "";
   fetch("https://moviesapi.ir/api/v1/movies?page=1")
@@ -536,7 +535,6 @@ function getPopularMoviesInfo() {
 
 
 //!  Logic For Category Movie 
-
 const genreBoxLinks = document.querySelectorAll('.genre__box-link')
 genreBoxLinks.forEach((genreBoxLink)=>{
   genreBoxLink.addEventListener('click',()=>{

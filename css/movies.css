@@ -1,3 +1,4 @@
+/*! Import Css Modules */
 @import './reset.css';
 @import './navbar.css';
 @import './footer.css';
@@ -123,7 +124,6 @@ body{background-color: var(--woodSmoke);}
 
 
 .movies__list-box:hover{
-    /* cursor: pointer; */
     transform: scale(1.1);
 }
 
@@ -164,35 +164,11 @@ body{background-color: var(--woodSmoke);}
 }
 
 
-/* .movies__list-box-detail-btn{
-    display: flex;
-    align-items: center;
-    background-color: red;
-    padding: 0.8rem 2rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    color: var(--white);
-    opacity: 0.5;
-    font-family: 'inter-regular', Courier, monospace;
-    max-width: 100%;
-    transition: all 100ms ease-in;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
-} */
-
 
 .movies__list-box-detail-btn:hover{
     opacity: 1;
     transition: all 200ms ease-in;
 }
-
-
-
-/* .movies__list-box-detail-btn-svg{
-    width: 1.2rem;
-    height: 1.2rem;
-    text-align: center;
-} */
 
 .movies__list-box{
     position: relative;

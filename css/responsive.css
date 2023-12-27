@@ -494,9 +494,6 @@
 /* *  /////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 340px) {
-  .genre__box {
-    margin-bottom: 2.8rem;
-  }
 
   .film__desc-wrapper-left-title {
     font-size: 0.5rem;

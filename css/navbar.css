@@ -34,8 +34,6 @@
 
 }
 
-
-
 .navbar__list-link{
     color: var(--white);
     font-family: 'poppins-medium', Courier, monospace;
@@ -47,7 +45,6 @@
 .navbar__list-link:hover{
     color: var(--cadmiumRed);
     text-shadow: 3px 0px 0px rgba(229, 9, 20, 1);
-    /* text-shadow: 3px 0px 0px rgba(255, 255, 255, 1); */
     font-size: 1.4rem;
 }
 

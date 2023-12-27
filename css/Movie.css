@@ -1,3 +1,4 @@
+/*! Import Css Modules */
 @import './navbar.css';
 @import './fonts.css';
 @import './reset.css';
@@ -264,14 +265,12 @@ body{background-color: var(--woodSmoke);}
 
 .comments__write{
     display: flex;
-    /* background-color: red; */
     background-color: var(--rangoonGreen);
     margin-top: 2rem;
 }
 
 .comments__avatar{
     border-radius: 50%;
-    /* background-color: blue; */
     margin-right: 1rem;
 }
 
@@ -290,8 +289,6 @@ body{background-color: var(--woodSmoke);}
 }
 
 .comments__btn{
-    /* margin-left: 4rem; */
-    /* width: 4rem; */
     padding: 0rem 4rem;
     text-align: center;
     font-family: 'inter-bold', Courier, monospace;
@@ -305,9 +302,7 @@ body{background-color: var(--woodSmoke);}
 .comments__boxes{
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     background-color: var(--rangoonGreen);
-    /* margin-top: 1rem; */
     margin-bottom: 10rem;
 }
 
@@ -374,8 +369,6 @@ body{background-color: var(--woodSmoke);}
     border-radius: 0.5rem;
 }
 
-
-
 .similar__slider-img{
     opacity: 0.7;
 }
@@ -384,8 +377,6 @@ body{background-color: var(--woodSmoke);}
     opacity: 1;
     transition: all 200ms ease-in;
 }
-
-
 
 .similar__slider{
     margin-top: 2rem;
