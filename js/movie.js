@@ -284,21 +284,16 @@ const swiper2 = new Swiper('.similar-swiper-film', {
 
 
 //!  Sweet Alert 2 Logic
-document.addEventListener('DOMContentLoaded', function() {
-  if (!sessionStorage.getItem('alertShown2')) {
-    Swal.fire({
-      title: 'توجه',
-      text:'در این صفحه اطلاعات فیلم نمایش داده می شود که اطلاعات از api گرفته می شود  اما بخش کامنت ها به صورت استاتیک می باشد و اسلایدر similar فیلم های مشابه را نمایش می دهد', 
-      icon: 'info',
-      animation:true,
-      backdrop:true,
-      iconColor:'#e50914',
-      textDirection: "rtl",
-      background:'#0d0c11',
-      confirmButtonText: 'متوجه شدم',
-      confirmButtonColor:'#e50914',
-      focusConfirm:true,
-    })
-      sessionStorage.setItem('alertShown2', 'true');
-  }
-});
+Swal.fire({
+  title: 'توجه',
+  text:'در این صفحه اطلاعات فیلم نمایش داده می شود که اطلاعات از api گرفته می شود  اما بخش کامنت ها به صورت استاتیک می باشد و اسلایدر similar فیلم های مشابه را نمایش می دهد', 
+  icon: 'info',
+  animation:true,
+  backdrop:true,
+  iconColor:'#e50914',
+  textDirection: "rtl",
+  background:'#0d0c11',
+  confirmButtonText: 'متوجه شدم',
+  confirmButtonColor:'#e50914',
+  focusConfirm:true,
+})

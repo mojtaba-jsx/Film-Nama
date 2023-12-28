@@ -5,8 +5,9 @@ window.addEventListener('load',getMoviesInfo);
 function getMoviesInfo(){
     moviesListBoxs.innerHTML='';
     let movieID = localStorage.getItem("PageNumber");
+    console.log(movieID);
     let movieGenreId = localStorage.getItem('genreBoxId')
-    fetch(`https://moviesapi.ir/api/v1/genres/${movieGenreId}/movies?page=${movieID}`)
+    fetch(`https://moviesapi.ir/api/v1/genres/${movieGenreId ? movieGenreId:1}/movies?page=${movieID?movieID:1}`)
     .then(res => res.json())
     .then(movies=>
         movies.data.forEach((movie)=>{
@@ -111,22 +112,16 @@ function getMoviesByGenre(id){
 
 
 //!  Sweet Alert 2 Logic
-document.addEventListener('DOMContentLoaded', function() {
-  if (!sessionStorage.getItem('alertShown3')) {
-    Swal.fire({
-      title: 'توجه',
-      text:'در این صفحه اطلاعات فیلم ها از api گرفته می شود و با کلیک بر روی هر ژانر فیلم های مربوط آن نمایش داده می شود و با کلیک بر روی هر فیلم به صفحه ی توضیحات آن منتقل می شوید ',
-      icon: 'info',
-      animation:true,
-      backdrop:true,
-      iconColor:'#e50914',
-      textDirection: "rtl",
-      background:'#0d0c11',
-      confirmButtonText: 'متوجه شدم',
-      confirmButtonColor:'#e50914',
-      focusConfirm:true,
-    })
-
-      sessionStorage.setItem('alertShown3', 'true');
-  }
-});
+Swal.fire({
+  title: 'توجه',
+  text:'در این صفحه اطلاعات فیلم ها از api گرفته می شود و با کلیک بر روی هر ژانر فیلم های مربوط آن نمایش داده می شود و با کلیک بر روی هر فیلم به صفحه ی توضیحات آن منتقل می شوید ',
+  icon: 'info',
+  animation:true,
+  backdrop:true,
+  iconColor:'#e50914',
+  textDirection: "rtl",
+  background:'#0d0c11',
+  confirmButtonText: 'متوجه شدم',
+  confirmButtonColor:'#e50914',
+  focusConfirm:true,
+})
