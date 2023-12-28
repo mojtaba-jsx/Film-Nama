@@ -10,7 +10,7 @@ function getMovieInfo(){
   .then(movie => 
     filmDescriptionWrapperRight.insertAdjacentHTML('beforeend',`
     
-    <div class="film__desc-wrapper">
+    <div class="film__desc-wrapper" >
     <div class="film__desc-wrapper-left">
       <img
         class="film__desc-wrapper-image"
@@ -110,7 +110,7 @@ function getMovieInfo(){
   </div>
 
 
-  <div class="movie-images">
+  <div class="movie-images" >
       <div class="movie-image">
           <img class='movie-image-img' src="${movie.images[0]}" alt="image">
       </div>
@@ -141,7 +141,7 @@ function getSimilarSliderInfo(){
       swiperSimilarWrapper.insertAdjacentHTML('beforeend',`
       <div class="swiper-slide similar-slide">
       <div class="similar__slider-contents">
-        <span class="similar__slider-contents-category">${movie.genres}</span
+        <span class="similar__slider-contents-category">${movie.genres[0]}</span
         >
         <div class="similar__slider-contents-stars">
           <svg
@@ -297,3 +297,8 @@ Swal.fire({
   confirmButtonColor:'#e50914',
   focusConfirm:true,
 })
+
+
+
+
+
