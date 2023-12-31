@@ -339,6 +339,7 @@ function getRecomendedMoviesInfo() {
             <span class="recommend__slider-name"> ${movie.title} </span>
           </div>
           <img
+          onclick='showMovieReacommendSlider(${movie.id})'
             src="${movie.poster}"
             alt="image"
             class="recommend__slider-img"
@@ -350,6 +351,13 @@ function getRecomendedMoviesInfo() {
       })
     );
 }
+
+function showMovieReacommendSlider(id){
+  localStorage.setItem('id',id)
+  location.href ='./movie.html'
+}
+
+
 
 //!  Get From Api Movies Info For Popular Slider
 const swiperWrapperSlider3 = document.querySelector(".swiperWrapperSlides3");
@@ -449,6 +457,7 @@ function getPopularMoviesInfo() {
         <span class="popular__slider-name"> ${movie.title} </span>
       </div>
       <img
+      onclick='showMovieReacommendSlider(${movie.id})'
         src="${movie.poster}"
         alt="image"
         class="popular__slider-img"
