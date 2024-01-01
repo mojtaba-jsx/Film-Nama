@@ -130,3 +130,12 @@ body{background-color: var(--woodSmoke);}
 
 
 
+
+.iziToast-texts{
+    font-family: 'Iranina-Sans', Courier, monospace;
+}
+
+.iziToast-icon{
+    width: 10rem;
+    height: 10rem;
+}
