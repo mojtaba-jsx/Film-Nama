@@ -367,13 +367,16 @@ body {
 /*! Swal Library Css */
 .swal2-modal {
   direction: rtl;
-  font-family: "poppins-bold", Courier, monospace;
+  font-family: "Iranina-Sans", Courier, monospace;
+  font-weight: bold;
   font-size: 1.2rem;
+  line-height: 1rem;
   color: var(--white);
 }
 
 .swal2-confirm{
-  font-family: "poppins-bold", Courier, monospace;
+  font-family: "Iranina-Sans", Courier, monospace;
+  font-weight: bold;
 
 }
 

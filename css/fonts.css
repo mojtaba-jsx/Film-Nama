@@ -39,3 +39,8 @@
     font-family: 'poppins-regular';
     src: url('../fonts/poppins/Poppins-Regular.ttf');
 }
+
+@font-face {
+    font-family: 'Iranina-Sans';
+    src: url(../fonts/IranianSans/Iranian\ Sans.ttf);
+}
