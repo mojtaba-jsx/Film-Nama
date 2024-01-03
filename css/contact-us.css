@@ -6,6 +6,7 @@
 @import './notif-box.css';
 @import './mobile-menu.css';
 @import './responsive.css';
+@import './footer.css';
 
 /*! Color Variables And Container */
 
@@ -185,3 +186,16 @@ body{background-color: var(--woodSmoke);}
 .sound-success,.sound-error{
     display: none;
 } 
+
+/*! Swal Library Css */
+.swal2-modal {
+    direction: rtl;
+    font-family: "Iranina-Sans", Courier, monospace;
+    font-size: 1.2rem;
+    color: var(--white);
+  }
+  
+  .swal2-confirm{
+    font-family: "Iranina-Sans", Courier, monospace;
+  
+  }

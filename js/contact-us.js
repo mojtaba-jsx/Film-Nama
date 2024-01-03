@@ -54,9 +54,18 @@ contactUsFormBtnLink.addEventListener('click',()=>{
 })
 
 
-
-
-
-
-
-
+// //!  Sweet Alert 2 Logic
+Swal.fire({
+    title: 'توجه',
+    text:'در این صفحه از کتابخانه iziToast و اعتبارسنجی فرم استفاده شده است ',
+    icon: 'info',
+    animation:true,
+    backdrop:true,
+    iconColor:'#e50914',
+    textDirection: "rtl",
+    background:'#0d0c11',
+    confirmButtonText: 'متوجه شدم',
+    confirmButtonColor:'#e50914',
+    focusConfirm:true,
+  })
+  
