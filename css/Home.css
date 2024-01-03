@@ -7,8 +7,8 @@
 @import './footer.css';
 @import './reset.css';
 @import './scroll-bar.css';
-/*! Color Variables And Container */
 
+/*! Color Variables And Container */
 :root {
   --woodSmoke: #0d0c11;
   --cadmiumRed: #e50914;
@@ -86,7 +86,7 @@ body {
 }
 
 .landing{
-	background:url(../images//landing.png) repeat-x 0 / 100% 100%;
+	background:url(../images/landing/landing.png) repeat-x 0 / 100% 100%;
 	animation: ani 40s linear infinite ;
   width: 100%;
   height: 100%;
