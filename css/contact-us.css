@@ -10,16 +10,13 @@
 @import './scroll-bar.css';
 
 
-
 /*! Color Variables And Container */
-
 :root{
     --woodSmoke:#0D0C11;
     --cadmiumRed:#E50914;
     --white:#ffffff;
     --rangoonGreen:#17161B;
 }
-
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -72,13 +69,6 @@ body{background-color: var(--woodSmoke);}
         opacity: 0.5;
     }
   }
-
-
-
-
-
-
-
 
 .contact-us__title{
     color: var(--white);
@@ -170,9 +160,6 @@ body{background-color: var(--woodSmoke);}
     transform: scale(1.4);
 }
 
-
-
-
 .iziToast-texts{
     font-family: 'Iranina-Sans', Courier, monospace;
 }
@@ -196,9 +183,9 @@ body{background-color: var(--woodSmoke);}
     font-family: "Iranina-Sans", Courier, monospace;
     font-size: 1.2rem;
     color: var(--white);
-  }
+}
   
   .swal2-confirm{
     font-family: "Iranina-Sans", Courier, monospace;
   
-  }
+}

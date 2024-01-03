@@ -213,7 +213,6 @@ body{background-color: var(--woodSmoke);}
 .movie-images{
     display: flex;
     justify-content: space-around;
-    /* flex-direction: column; */
     flex-wrap: wrap;
 }
 
@@ -241,10 +240,7 @@ body{background-color: var(--woodSmoke);}
 }
 
 
-
-
 /** ////Comments Section  Styles //// */
-
 .comment__wrapper{
     display: flex;
     flex-direction: column;
@@ -343,7 +339,6 @@ body{background-color: var(--woodSmoke);}
 
 
 /** ////Swiper Js Similar Slider Styles //// */
-
 .swiper-wrapper{
     align-items: center;
 }
