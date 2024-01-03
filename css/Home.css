@@ -3,6 +3,9 @@
 @import "./search-modal.css";
 @import "./notif-box.css";
 @import "./mobile-menu.css";
+@import './fonts.css';
+@import './footer.css';
+@import './reset.css';
 /*! Color Variables And Container */
 
 :root {
