@@ -2,12 +2,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--^ ----------------------Css Links ---------------------- -->
     <link rel="stylesheet" href="./css/Movies.css" />
     <link rel="stylesheet" href="./vendor/sweet-alert/sweetalert2.min.css">
     <link rel="stylesheet" href="./css/responsive.css" />
     <title>Movies</title>
   </head>
   <body>
+    <!--! ----------------------Header Section---------------------- -->
     <header class="header">
       <div class="container">
         <!--^ ---------------------Start NavBar------------------ -->
@@ -114,6 +116,7 @@
       </div>
     </header>
 
+    <!--! ----------------------Mobile Menu Section---------------------- -->
     <section class="mobile-menu">
       <!-- <h2 class="mobile-menu__logo">FILM NAMA</h2> -->
       <ul class="mobile-menu__list">
@@ -229,6 +232,7 @@
       </div>
     </section>
 
+    <!--! ----------------------Search Modal Section---------------------- -->
     <section class="search-modal">
       <h2 class="search-modal__title">Search Your Movie</h2>
       <input
@@ -239,13 +243,16 @@
       <button class="search-modal__btn">Search</button>
     </section>
 
+    <!--! ----------------------Notif Box Section---------------------- -->
     <section class="notif-box">
       <div class="notif-modal">
         <span class="notif-modal__title">Notification Box is Empty</span>
       </div>
     </section>
 
+    <!--! ----------------------Main Section---------------------- -->
     <main class="main">
+                <!--* -----------Movie List Section----------- -->
       <section class="movies__list">
         <div class="container">
           <div class="movies__list-wrapper">
@@ -261,6 +268,8 @@
           </div>
         </div>
       </section>
+
+                <!--* -----------Pagination Section----------- -->
       <section class="pagination">
         <div class="container">
           <div class="pagination__wrapper">
@@ -270,7 +279,9 @@
       </section>
     </main>
 
+    <!--! ----------------------Footer Section---------------------- -->
     <footer class="footer">
+                <!--* -----------Footer Top Section----------- -->
       <section class="footer-top">
         <div class="footer-top__wrapper">
           <div class="footer-top__col1">
@@ -391,11 +402,14 @@
         </div>
       </section>
 
+                <!--* -----------Footer Bottom Section----------- -->
       <section class="footer-bottom">
         <p class="footer-bottom__text">© Film Nama - 2023</p>
       </section>
     </footer>
 
+
+        <!--* ----------------------JS Scripts Links ---------------------- -->
     <script src="./vendor/sweet-alert/sweetalert2@11.js"></script>
     <script src="./js/movies.js"></script>
     <script src="./js/shared.js"></script>
