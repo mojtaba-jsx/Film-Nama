@@ -5,8 +5,6 @@ window.addEventListener('load',getMovieInfo)
 let movieID = localStorage.getItem("id");
 function getMovieInfo(){
   filmDescriptionWrapperRight.innerHTML=''
-
-
   fetch(`https://moviesapi.ir/api/v1/movies/${movieID}`)
   .then(res => res.json())
   .then(movie => 
@@ -130,7 +128,7 @@ function getMovieInfo(){
 }
 
 
-//!  add api To movie Similar Slider in Movie.html
+//!  Api For movie Similar Slider in Movie.html
 const swiperSimilarWrapper = document.querySelector('.swiperSimilarWrapper');
 window.addEventListener('load',getSimilarSliderInfo)
 function getSimilarSliderInfo(){

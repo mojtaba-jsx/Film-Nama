@@ -1,34 +1,4 @@
-//!  Swiper Js
-//!  Swiper Js Landing Section
-
-const swiper1 = new Swiper(".swiper-container-1", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  slidesPerView: "1",
-  centeredSlides: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-
-//!  Swiper Js Recommend Section
+//!  Swiper Js Config Recommend Section
 const swiper2 = new Swiper(".swiper-container-2", {
   // Optional parameters
   direction: "horizontal",
@@ -126,6 +96,7 @@ const swiper2 = new Swiper(".swiper-container-2", {
   },
 });
 
+//!  Swiper Js Config Poular Section
 const swiper3 = new Swiper(".swiper-container-3", {
   // Optional parameters
   direction: "horizontal",
@@ -222,24 +193,6 @@ const swiper3 = new Swiper(".swiper-container-3", {
     el: ".swiper-scrollbar",
   },
 });
-
-// //!  Sweet Alert 2 Logic
-Swal.fire({
-  title: 'توجه',
-  text:'این قالب با CSS , HTML و JS  به صورت ریسپانسیو در پنج صفحه توسعه داده شده است و از کتابخانه های Swiper Js  و Sweet Alert 2  استفاده شده است  و در این صفحه اطلاعات اسلایدرها از Api گرفته می شود  و در بخش Category با کلیک بر روی هر ژانر به صفحه ی فیلم های مربوط به آن منتقل می شوید .',
-  icon: 'info',
-  animation:true,
-  backdrop:true,
-  iconColor:'#e50914',
-  textDirection: "rtl",
-  background:'#0d0c11',
-  confirmButtonText: 'متوجه شدم',
-  confirmButtonColor:'#e50914',
-  focusConfirm:true,
-})
-
-
-
 
 
 //!  Get From Api Movies Info For Recommended Slider
@@ -352,12 +305,11 @@ function getRecomendedMoviesInfo() {
     );
 }
 
+//! set Movie Id To localStorage
 function showMovieReacommendSlider(id){
   localStorage.setItem('id',id)
   location.href ='./movie.html'
 }
-
-
 
 //!  Get From Api Movies Info For Popular Slider
 const swiperWrapperSlider3 = document.querySelector(".swiperWrapperSlides3");
@@ -470,15 +422,28 @@ function getPopularMoviesInfo() {
 }
 
 
-
-//!  Logic For Category Movie 
+//!  Logic For Movie Category
 const genreBoxLinks = document.querySelectorAll('.genre__box-link')
 genreBoxLinks.forEach((genreBoxLink)=>{
   genreBoxLink.addEventListener('click',()=>{
     genreBoxLink.href = './movies.html'
     localStorage.setItem('genreBoxId',genreBoxLink.id);
-    
   })
+})
+
+// //!  Sweet Alert 2 Logic
+Swal.fire({
+  title: 'توجه',
+  text:'این قالب با CSS , HTML و JS  به صورت ریسپانسیو در پنج صفحه توسعه داده شده است و از کتابخانه های Swiper Js  و Sweet Alert 2  استفاده شده است  و در این صفحه اطلاعات اسلایدرها از Api گرفته می شود  و در بخش Category با کلیک بر روی هر ژانر به صفحه ی فیلم های مربوط به آن منتقل می شوید .',
+  icon: 'info',
+  animation:true,
+  backdrop:true,
+  iconColor:'#e50914',
+  textDirection: "rtl",
+  background:'#0d0c11',
+  confirmButtonText: 'متوجه شدم',
+  confirmButtonColor:'#e50914',
+  focusConfirm:true,
 })
 
 

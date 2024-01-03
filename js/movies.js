@@ -1,4 +1,3 @@
-
 //! Get Movie Info With Api for Movies.js
 const moviesListBoxs = document.querySelector('.movies__list-boxs');
 window.addEventListener('load',getMoviesInfo);
@@ -50,6 +49,7 @@ for (let index = 1; index <= pageCount; index++) {
   `)
 }
 
+
 //! Get Page Number With set Event On Btns
 const paginationListItems = document.querySelectorAll('.pagination__list-item')
 paginationListItems.forEach((listItem)=>{
@@ -60,6 +60,7 @@ paginationListItems.forEach((listItem)=>{
 })
 
 
+//! Logic For get MoviesGenre
 const moviesListGenersList = document.querySelector('.movies__list-geners-list')
 window.addEventListener('load',getMovieGenres)
 function getMovieGenres(){

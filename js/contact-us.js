@@ -1,20 +1,24 @@
+// !Elements Variable
 const contactUsFormName = document.querySelector('.contact-us__form-name');
 const contactUsFormEmail = document.querySelector('.contact-us__form-email');
 const contactUsFormText = document.querySelector('.contact-us__form-text');
 const contactUsFormBtnLink = document.querySelector('.contact-us__form-btn-link')
-
+//!
 const successAudio =document.querySelector('.sound-success')
 const failAudio =document.querySelector('.sound-error') 
-
+//!
 const emojiLaugh = '../icons/emojiLaugh.svg'
 const emojiUpset = '../icons/EmojiUpset.svg'
+//!
 
+//! Fucntion For Clear Input after Successfully submit
 function clearInputs(){
     contactUsFormName.value ='';
     contactUsFormEmail.value ='';
     contactUsFormText.value ='';
 }
 
+// ! Click Event For Control Form Validation
 contactUsFormBtnLink.addEventListener('click',()=>{
     let emailValue =contactUsFormEmail.value;
     let str = 'ali@gmail.om'
