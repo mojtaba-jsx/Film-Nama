@@ -7,6 +7,8 @@
 @import './search-modal.css';
 @import './mobile-menu.css';
 @import './responsive.css';
+@import './scroll-bar.css';
+
 
 :root{
     --woodSmoke:#0D0C11;
