@@ -3,10 +3,11 @@ const contactUsFormEmail = document.querySelector('.contact-us__form-email');
 const contactUsFormText = document.querySelector('.contact-us__form-text');
 const contactUsFormBtnLink = document.querySelector('.contact-us__form-btn-link')
 
-const successAudio = new Audio('../sounds/success-1-6297.mp3')
-const failAudio = new Audio('../sounds/error-when-entering-the-game-menu-132111.mp3')
+const successAudio =document.querySelector('.sound-success')
+const failAudio =document.querySelector('.sound-error') 
 
-
+const emojiLaugh = '../icons/emojiLaugh.svg'
+const emojiUpset = '../icons/EmojiUpset.svg'
 
 function clearInputs(){
     contactUsFormName.value ='';
@@ -23,8 +24,8 @@ contactUsFormBtnLink.addEventListener('click',()=>{
     if( contactUsFormName.value.length >= 3 && regexResult !==false && contactUsFormText.value.length > 4){
         successAudio.play()
         iziToast.show({
-            iconUrl: '../icons/emojiLaugh.svg',
-            icon:'',
+            icon:"lnr lnr-smile",
+            iconColor:'#fff',
             position:'topRight',
             timeout:'5000',
             messageSize:'20',
@@ -32,22 +33,22 @@ contactUsFormBtnLink.addEventListener('click',()=>{
             backgroundColor:'green',
             messageColor:'#fff',
             progressBar:'true',
-            message: 'پیام شما با موفقیت ارسال شد با تشکر',
+            message: 'Your Message Has Been Successfully sent, Thank You',
         });
         clearInputs()
     }else{
         failAudio.play()
         iziToast.show({
-            iconUrl: '../icons/emojiUpset.svg',
-            icon:'',
             position:'topRight',
+            icon: "lnr lnr-sad",
+            iconColor:'#fff',
             timeout:'5000',
             messageSize:'20',
             pauseOnHover:'true',
             backgroundColor:'red',
             messageColor:'#fff',
             progressBar:'true',
-            message: 'لطفا فیلدهای خالی را پر کنید  ',
+            message: 'Please Fill In The Blank Fields',
         });
     }
 })

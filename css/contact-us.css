@@ -177,3 +177,11 @@ body{background-color: var(--woodSmoke);}
     width: 10rem;
     height: 10rem;
 }
+.iziToast-message{
+    font-family: 'poppins-bold', Courier, monospace;
+}
+
+
+.sound-success,.sound-error{
+    display: none;
+} 
