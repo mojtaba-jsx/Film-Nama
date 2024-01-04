@@ -139,7 +139,7 @@ function getSimilarSliderInfo(){
   .then(movies =>
     movies.data.forEach((movie)=>{
       swiperSimilarWrapper.insertAdjacentHTML('beforeend',`
-      <div class="swiper-slide similar-slide">
+      <div class="swiper-slide similar-slide" onclick='showMovieInfo(${movie.id})' >
       <div class="similar__slider-contents">
         <span class="similar__slider-contents-category">${movie.genres[0]}</span
         >
@@ -233,6 +233,15 @@ function getSimilarSliderInfo(){
     })
     )
 }
+
+
+//! Set Similar Movie Id in LocalStorage
+function showMovieInfo(id){
+  console.log(id);
+  localStorage.setItem('id',id)
+  location.href='./Movie.html'
+}
+
 
 
 //!   Similar Movie Slider in Movie.html
