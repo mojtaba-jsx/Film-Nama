@@ -38,7 +38,6 @@ body{background-color: var(--woodSmoke);}
 .contact-us__wrapper{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-between;
 }
 

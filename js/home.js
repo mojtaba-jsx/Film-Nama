@@ -96,7 +96,7 @@ const swiper2 = new Swiper(".swiper-container-2", {
   },
 });
 
-//!  Swiper Js Config Poular Section
+//!  Swiper Js Config Popular Section
 const swiper3 = new Swiper(".swiper-container-3", {
   // Optional parameters
   direction: "horizontal",

@@ -9,7 +9,6 @@ const failAudio =document.querySelector('.sound-error')
 //!
 const emojiLaugh = '../icons/emojiLaugh.svg'
 const emojiUpset = '../icons/EmojiUpset.svg'
-//!
 
 //! Fucntion For Clear Input after Successfully submit
 function clearInputs(){

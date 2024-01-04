@@ -4,6 +4,7 @@ const modalSearch = document.querySelector('.search-modal');
 const searchIcon =document.querySelector('.navabr__search-icon-svg');
 const closeModalBtn = document.querySelector('.search-modal__close');
 const modalContainer = document.querySelector('.modal-container');
+
 //!
 const notifModalCloseBtn = document.querySelector('.notif-modal__close');
 const notifBox = document.querySelector('.notif-box');
