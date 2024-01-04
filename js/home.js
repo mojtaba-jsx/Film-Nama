@@ -434,7 +434,7 @@ genreBoxLinks.forEach((genreBoxLink)=>{
 // //!  Sweet Alert 2 Logic
 Swal.fire({
   title: 'توجه',
-  text:'این قالب با CSS , HTML و JS  به صورت ریسپانسیو در پنج صفحه توسعه داده شده است و از کتابخانه های Swiper Js  و Sweet Alert 2  استفاده شده است  و در این صفحه اطلاعات اسلایدرها از Api گرفته می شود  و در بخش Category با کلیک بر روی هر ژانر به صفحه ی فیلم های مربوط به آن منتقل می شوید .',
+  text:'قالب FILM NAMA  در پنج صفحه به صورت ریپانسیو و با استفاده از CSS , HTML  و JS و با کتابخانه های SweetAlert , Swiper Js و iziToast توسعه داده شده است و باکلیک بر روی فیلم های هر اسلایدر به صفحه ی اطلاعات مربوط به آن منتقل می شوید و در بخش Category با کلیک بر روی هر ژانر به لیست مربوط به آن منتقل می شوید',
   icon: 'info',
   animation:true,
   backdrop:true,
