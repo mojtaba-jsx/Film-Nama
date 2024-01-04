@@ -1,46 +1,46 @@
 /* !Inter Fonts */
 @font-face {
     font-family: 'inter-bold';
-    src: url('../fonts/inter/Inter-Bold.ttf');
+    src: url('../assets/fonts/inter/Inter-Bold.ttf');
 }
 
 @font-face {
     font-family: 'inter-light';
-    src: url('../fonts/inter/Inter-Light.ttf');
+    src: url('../assets/fonts/inter/Inter-Light.ttf');
 }
 
 @font-face {
     font-family: 'inter-medium';
-    src: url('../fonts/inter//Inter-Medium.ttf');
+    src: url('../assets/fonts/inter/Inter-Medium.ttf');
 }
 
 @font-face {
     font-family: 'inter-regular';
-    src: url('../fonts/inter/Inter-Regular.ttf');
+    src: url('../assets/fonts/inter/Inter-Regular.ttf');
 }
 
 /*! Poppins Fonts */
 @font-face {
     font-family: 'poppins-bold';
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
+    src: url('../assets/fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
     font-family: 'poppins-light';
-    src: url('../fonts/poppins/Poppins-Light.ttf');
+    src: url('../assets/fonts/poppins/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'poppins-medium';
-    src: url('../fonts/poppins//Poppins-Medium.ttf');
+    src: url('../assets/fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
     font-family: 'poppins-regular';
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
+    src: url('../assets/fonts/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Iranina-Sans';
-    src: url(../fonts/IranianSans/Iranian\ Sans.ttf);
+    src: url('../assets/fonts/IranianSans/Iranian\ Sans.ttf');
 }
