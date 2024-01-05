@@ -5,7 +5,7 @@ window.addEventListener('load',getMovieInfo)
 let movieID = localStorage.getItem("id");
 function getMovieInfo(){
   filmDescriptionWrapperRight.innerHTML=''
-  fetch(`https://moviesapi.ir/api/v1/movies/${movieID}`)
+  fetch(`https://moviesapi.ir/api/v1/movies/${movieID ? movieID:1}`)
   .then(res => res.json())
   .then(movie => 
     filmDescriptionWrapperRight.insertAdjacentHTML('beforeend',`
