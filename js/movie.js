@@ -134,7 +134,7 @@ window.addEventListener('load',getSimilarSliderInfo)
 function getSimilarSliderInfo(){
   swiperSimilarWrapper.innerHTML='';
   let MovieGenreId = localStorage.getItem('MovieGenreId');
-  fetch(`https://moviesapi.ir/api/v1/genres/${MovieGenreId}/movies?page1`)
+  fetch(`https://moviesapi.ir/api/v1/genres/${MovieGenreId ? MovieGenreId:1}/movies?page1`)
   .then(res => res.json())
   .then(movies =>
     movies.data.forEach((movie)=>{
