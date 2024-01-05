@@ -223,11 +223,11 @@ body{background-color: var(--woodSmoke);}
     margin-bottom: 8rem;
     border-radius: 2rem;
     box-shadow: #E50914 0px 20px 30px -10px;
+    transition: all 200ms ease-in;
 }
 
 .movie-image:hover{
     transform: scale(1.1);
-    transition: all 200ms ease-in;
     box-shadow: #0bd95a 0px 20px 30px -10px;
 
 }
@@ -236,6 +236,7 @@ body{background-color: var(--woodSmoke);}
     height: 100%;
     width: 100%;
     border-radius: 2rem;
+
 }
 
 
