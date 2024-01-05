@@ -22,6 +22,10 @@
     transition: all 140ms ease-in;
 }
 
+.navbar__logo-link{
+    color: var(--cadmiumRed);
+}
+
 
 .navbar__list{
     display: flex;
